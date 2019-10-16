@@ -80,26 +80,17 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>dart=0 lilucpu=9 alcid=11 darkwake=0</string>
+		<string>dart=0 -disablegfxfirmware -cdfon -igfxnohdmi lilucpu=9 -v -alcbeta alcid=11</string>
 		<key>DefaultLoader</key>
 		<string>boot.efi</string>
 		<key>DefaultVolume</key>
-		<string>Catalina</string>
+		<string>Macintosh HD</string>
 		<key>NeverHibernate</key>
-		<true/>
-		<key>NoEarlyProgress</key>
 		<true/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
 		<integer>5</integer>
-	</dict>
-	<key>BootGraphics</key>
-	<dict>
-		<key>EFILoginHiDPI</key>
-		<integer>1</integer>
-		<key>UIScale</key>
-		<integer>2</integer>
 	</dict>
 	<key>CPU</key>
 	<dict>
@@ -300,8 +291,6 @@
 			<key>Tool</key>
 			<true/>
 		</dict>
-		<key>ScreenResolution</key>
-		<string>2560x1440</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -409,7 +398,7 @@
 				<key>Comment</key>
 				<string>X1 C6 USB SD CardReader Patch #2</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				PHN0cmluZz5BUFBMRTwvc3RyaW5nPg==
@@ -427,7 +416,7 @@
 				<key>Comment</key>
 				<string>X1 C6 USB SD CardReader Patch #3</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				PGludGVnZXI+MzM3OTU8L2ludGVnZXI+
@@ -463,7 +452,7 @@
 				<key>Comment</key>
 				<string>X1 C6 USB SD CardReader Patch #5</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				PGludGVnZXI+MzM3OTY8L2ludGVnZXI+
@@ -490,30 +479,8 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>BiosReleaseDate</key>
-		<string>05/28/2019</string>
-		<key>BiosVendor</key>
-		<string>Apple Inc.</string>
-		<key>BiosVersion</key>
-		<string>MBP141.88Z.F000.B00.1905281616</string>
-		<key>Board-ID</key>
-		<string>Mac-B4831CEBD52A0C4C</string>
-		<key>BoardManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>BoardType</key>
-		<integer>10</integer>
-		<key>BoardVersion</key>
-		<string>1.0</string>
-		<key>ChassisAssetTag</key>
-		<string>MacBook-Aluminum</string>
-		<key>ChassisManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>ChassisType</key>
-		<string>0x09</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
-		<key>LocationInChassis</key>
-		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
 		<key>Mobile</key>
