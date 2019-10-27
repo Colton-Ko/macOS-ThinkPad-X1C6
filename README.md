@@ -12,17 +12,19 @@
 
 ### Contents
 
-1. English
-   1. Hardware Specifications
-   2. UEFI Setup Configuration
-   3. Software Overview
-      1. Guide Compatibility
-      2. Features
-   4. General installation procedure
-   5. More to know
-   6. Credits
+1. [Hardware Specifications](#Hardware-Specifications)
+2. [UEFI Setup Configuration](#UEFI-Setup-Configuration)
+3. [Software Overview](#Software-Overview)
+   1. [Guide Compatibility](#Compatibility)
+   2. [Features](#Features)
+4. [General installation procedure](#General-installation-procedure)
+5. [More to know](#More-to-know)
+6. [Useful utilities](#Useful-utilities)
+7. [Credits](#Credits)
 
 ### Hardware Specifications
+
+**This is the hardware specification of my ThinkPad X1 Carbon 6th.**
 
 | Item                        | Description                                                 |
 | --------------------------- | ----------------------------------------------------------- |
@@ -35,7 +37,9 @@
 | Media Card Reader           | Realtek USB3.0 Card Reader                                  |
 | Built-in Display Resolution | 2560x1440 (2K)                                              |
 | UEFI Firmware Version       | 1.41 (N23ET66W)                                             |
-| Storage                     | Samsung 970 EVO Plus NVMe PCIe 3.0 x4 M.2. SSD              |
+| Storage                     | Samsung 860 EVO M.2. SATA 6Gb/s SSD                         |
+
+[Back to Contents Page](#Contents)
 
 
 
@@ -43,12 +47,14 @@
 
 **Only listing values that matters. Feel free to configure other values to suit your needs.**
 
-| Item                         | Value    | Remarks                                           |
-| ---------------------------- | -------- | ------------------------------------------------- |
-| Secure Boot                  | Disabled | Unable to boot macOS if enabled                   |
-| Thunderbolt 3 BIOS Assistant | Disabled | No Thunderbolt 3 if enabled                       |
-| Wake on LAN                  | Disabled | Only 100M Ethernet if enabled                     |
-| Boot mode                    | Both     | Enable UEFI Boot mode, you can leave CSM mode on. |
+| Item                         | Value    | Remarks                                                      |
+| ---------------------------- | -------- | ------------------------------------------------------------ |
+| Secure Boot                  | Disabled | Unable to boot macOS if enabled                              |
+| Thunderbolt 3 BIOS Assistant | Disabled | No Thunderbolt 3 if enabled                                  |
+| Wake on LAN                  | Disabled | Only 100M Ethernet if enabled                                |
+| Boot mode                    | Both     | It can be set as any mode you want as long as you enable UEFI booting. |
+
+[Back to Contents Page](#Contents)
 
 
 
@@ -59,9 +65,13 @@
 - 10.14.x (macOS Mojave)
 - 10.15 (macOS Catalina)
 
+[Back to Contents Page](#Contents)
+
+
+
 #### Features
 
-| Feature                              | Status | Dependency                                                   |                                                              |
+| Feature                              | Status | Dependency                                                   | Remarks                                                      |
 | :----------------------------------- | ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | macOS Mojave 10.14.6                 | ✅      | `VirtualSMC.kext`, `Lilu.kext`,Clover Bootloader             | v2.5k R5093                                                  |
 | App Store                            | ✅      | Apple ID                                                     | -                                                            |
@@ -71,7 +81,7 @@
 | iTunes Video Playback                | ✅      | `WhateverGreen.kext`, Apple ID (*Optional*)                  | -                                                            |
 | Continuty                            | ✅      | `BT4LEContiunityFixup.kext`, Working Blutetooth and WiFi setup | -                                                            |
 | AirDrop                              | ✅      | `BT4LEContiunityFixup.kext`, Working Blutetooth and WiFi setup | -                                                            |
-|                                      |        |                                                              | Not tested                                                   |
+| Sidecar                              | ❓      | ❓                                                            | Not tested                                                   |
 | Bluetooth                            | ✅      | `BrcmFirmwareRepo.kext`, `BrcmPatchRAM2.kext`, `BrcmBluetoothInjector.kext` | -                                                            |
 | TrackPoint                           | ✅      | Patched `VoodooPS2Controller.kext`                           | -                                                            |
 | TrackPad                             | ✅      | `VoodooPS2Controller.kext`                                   | -                                                            |
@@ -81,9 +91,9 @@
 | Hibernation                          | ❌      | -                                                            | Disabled                                                     |
 | CPU Power Management (SpeedShift)    | ✅      | `XCPM`                                                       | -                                                            |
 | IGPU Power Management                | ✅      | `XCPM`                                                       | -                                                            |
-| Filesystem (APFS/HFS+)               | ✅      | Use SATA M.2. SSD or a Compatiable PCIe SSD                  | No NVMe Power Management                                     |
+| Filesystem (APFS/HFS+)               | ✅      | Use SATA M.2. SSD or a Compatiable M.2. PCIe SSD             | No NVMe Power Management                                     |
 | PCIe Ethernet                        | ✅      | `IntelMausiEthernet.kext`                                    | -                                                            |
-| AirPort Extreme (Wi-Fi)              | ✅      | Swapping Intel WLAN card to Dell DW1560                      | -                                                            |
+| AirPort Extreme (Wi-Fi)              | ✅      | Swapping Intel WLAN card with  Dell DW1560                   | -                                                            |
 | Sierra Wireless EM7455               | ❌      | `Legacy_Sierra_QMI.kext`                                     | No internet                                                  |
 | Audio Recording                      | ✅      | `AppleALC.kext` with Layout ID = 11                          | -                                                            |
 | Audio Playback                       | ✅      | `AppleALC.kext` with Layout ID = 11                          | -                                                            |
@@ -92,8 +102,10 @@
 | USB 3.1                              | ✅      | `USBInjectAll.kext` , `SSDT-UAIC.aml`                        | -                                                            |
 | Thunderbolt 3 Dock (Port Replicator) | ✅      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | -                                                            |
 | Thunderbolt 3 Hotplug                | ✅      | `IOElectrify.kext`                                           | -                                                            |
-|                                      | ✅      | ThinkPad Thunderbolt 3 Dock (40AC), `AppleRTL815XComposite109.kext` , `AppleRTL815XEthernet109.kext` | [Item page](https://support.lenovo.com/au/en/solutions/acc100356) |
+| ThinkPad TB3 Dock Ethernet           | ✅      | ThinkPad Thunderbolt 3 Dock (40AC), `AppleRTL815XComposite109.kext`, `AppleRTL815XEthernet109.kext` | [Item page](https://support.lenovo.com/au/en/solutions/acc100356) |
 | HiDPI *(Optional)*                   | ⚠️      | Shell Script from xzhih [Click Here](https://github.com/xzhih/one-key-hidpi) | May have werid scaling issues after wake up                  |
+
+[Back to Contents Page](#Contents)
 
 
 
@@ -128,6 +140,8 @@
       3. You have copied the boot files.
    3. Finished. Move on to step 2.
 
+<hr>
+
 ##### STEP 2: Boot into installer
 
 ###### Checklist
@@ -147,6 +161,8 @@
 5. You should see long text running in a black background for some time, this is normal.
 6. You should see macOS Installer menu, move on to step 3.
 
+<hr>
+
 ##### STEP 3: Partition your disks
 
 ###### Checklist
@@ -161,6 +177,8 @@
 2. Partition your disks according to your wish and your needs
 3. Format the partitions with `APFS` (Apple File System)
 4. You have partitioned your disks. Move on to step 4.
+
+<hr>
 
 ##### STEP 4: Begin installation
 
@@ -183,6 +201,8 @@
 2. When the ThinkPad is restarted, repeat Step 2 to continue the installation
 3. When the installation is completed, move on to Step 5.
 
+<hr>
+
 ##### STEP 5: Setup macOS
 
 ###### Checklist
@@ -195,6 +215,8 @@
 
 1. Follow on-screen instructions to setup your macOS installation.
 2. You should see macOS Desktop when you have finished, move on step 6.
+
+<hr>
 
 ##### STEP 6: Post Install Tweaks
 
@@ -228,10 +250,13 @@
          1. Go to the `EFI` folder of this repository
          2. Copy the entire `EFI` Folder to the root of the EFI System partition of the installation drive.
          3. Configure SMBIOS using the guide here: [Link](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/)
-            1. System Model should be MacBookPro14,1
+            1. System Model should be **MacBookPro14,1**
+            	- Reason: To enable HWP for better power management
          4. You have copied the boot files.
 
-### 
+[Back to Contents Page](#Contents)
+
+
 
 ### More to know
 
@@ -242,12 +267,17 @@
   - Follow gudie here: [Link to Tonymacx86](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/)
 - You may want to improve the battery life
   - Follow guide here to enable native CPU/ GPU Power Management: [Link to Tonymacx86](https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/)
+    - The CPU / GPU Power management is archieved by `CPUFriend.kext` and `CPUFriendDataProvider.kext` in my setup.
   - Also note that there are currently no NVMe power managemenet for Hackintosh, use M.2. SATA if you care about battery life.
 - If you have a ThinkPad Thunderbolt 3 Dock (Type 40AC) as I do
   - Download the requried software for working Ethernet
     - Link here: [Click me](https://gist.github.com/MadLittleMods/3005bb13f7e7178e1eaa9f054cc547b0)
 - If you have other other suggestions
   - Talk on Github
+
+[Back to Contents Page](#Contents)
+
+
 
 ### Useful utilities
 
@@ -257,12 +287,16 @@
 - [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
 - [MaciASL](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/)
 
+[Back to Contents Page](#Contents)
+
+
+
 ### Credits
 
 - Rehabman for most of the resources and guides
 - Tonymacx86 as a discussion platform and hosts most resources
-- P1LGRIM an iDiot's guide for iMessage
-- tylerngyuen for ACPI patch files
+- P1LGRIM an iDiot's guide for iMessage, Link: [iDiot's guide for iMessage](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/)
+- tylerngyuen for ACPI patch files, Link: [ylernguyen](https://github.com/tylernguyen)/[x1c6-hackintosh](https://github.com/tylernguyen/x1c6-hackintosh)
 - The darkvoid for macOS-IOElectrify, Link: [macOS-IOElectrify](https://github.com/the-darkvoid/macOS-IOElectrify)
 - noobsplanet for Internal SD Card reader patch, Link: [Internal SD Card reader patch](https://noobsplanet.com/index.php?threads/fix-internal-external-card-reader-hackintosh-guide.32/)
 - MadLittleMods for Ethernet on ThinkPad Thunderbolt 3 dock
@@ -270,10 +304,12 @@
 - acidanthera for Lilu, Link: [Lilu](https://github.com/acidanthera/Lilu)
 - acidanthera for WhateverGreen, Link: [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
 - xzhih for one-key-hidpi, Link: [one-key-hidpi](https://github.com/xzhih/one-key-hidpi)
-- headkaze for Hackintool
-- Sascha77 for Kext Updater
-- MacMan for Kext Beast
-- Mackie100 for Clover Configurator
+- headkaze for Hackintool, Link: [Hackintool](https://www.tonymacx86.com/threads/release-hackintool-v2-8-0.254559/)
+- Sascha77 for Kext Updater, Link: [Kext Updater](https://www.insanelymac.com/forum/topic/334222-kext-updater-keep-your-kexts-fresh-with-only-one-click/)
+- MacMan for Kext Beast, Link: [Kext Beast](https://www.tonymacx86.com/resources/kextbeast-2-0-2.399/)
+- Mackie100 for Clover Configurator, Link: [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
 - All contributors in the hackintosh community
 
-Last update: 2019-10-16
+[Back to Contents Page](#Contents)
+
+Last update: 2019-10-27
