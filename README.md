@@ -4,11 +4,15 @@
 
 > This repository provides some necessary resources to install a copy of macOS on ThinkPad X1 Carbon 6th. There is no guarantee of success, therefore you are expected to find extra resources to meet your needs, and be responsible for any consequences. **For Machine Type 20KH Only**
 
+<hr>
+
 ### Objective
 
 - Gather resources for a successful macOS installation on ThinkPad X1 Carbon 6th
 - To prevent myself from forgetting how to instal macOS on ThinkPad X1 Carbon 6th
 - To share the resources for others who might want to do the same thing
+
+<hr>
 
 ### Contents
 
@@ -21,6 +25,8 @@
 5. [More to know](#More-to-know)
 6. [Useful utilities](#Useful-utilities)
 7. [Credits](#Credits)
+
+<hr>
 
 ### Hardware Specifications
 
@@ -41,7 +47,7 @@
 
 [Back to Contents Page](#Contents)
 
-
+<hr>
 
 ### UEFI Setup Configuration
 
@@ -56,24 +62,24 @@
 
 [Back to Contents Page](#Contents)
 
-
+<hr>
 
 ### Software Overview
 
 #### Compatibility
 
 - 10.14.x (macOS Mojave)
-- 10.15 (macOS Catalina)
+- 10.15.x (macOS Catalina)
 
 [Back to Contents Page](#Contents)
 
-
+<hr>
 
 #### Features
 
 | Feature                              | Status | Dependency                                                   | Remarks                                                      |
 | :----------------------------------- | ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| macOS Mojave 10.14.6                 | ✅      | `VirtualSMC.kext`, `Lilu.kext`,Clover Bootloader             | v2.5k R5093                                                  |
+| macOS (10.14.x or 10.15.x)           | ✅      | `VirtualSMC.kext`, `Lilu.kext`,Clover Bootloader             | Clover v2.5k R5093                                           |
 | App Store                            | ✅      | Apple ID                                                     | -                                                            |
 | iMessage/ FaceTime                   | ✅      | Whitelisted Apple ID, Valid SMBIOS                           | [Guide](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/) |
 | iCloud                               | ✅      | Apple ID                                                     | -                                                            |
@@ -101,15 +107,17 @@
 | Micro SD Card Reader                 | ✅      | Patched `AppleUSBCardReader.kext`                            | -                                                            |
 | USB 3.1                              | ✅      | `USBInjectAll.kext` , `SSDT-UAIC.aml`                        | -                                                            |
 | Thunderbolt 3 Dock (Port Replicator) | ✅      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | -                                                            |
-| Thunderbolt 3 Hotplug                | ✅      | `IOElectrify.kext`                                           | -                                                            |
+| Thunderbolt 3 Hotplug                | ✅      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | -                                                            |
 | ThinkPad TB3 Dock Ethernet           | ✅      | ThinkPad Thunderbolt 3 Dock (40AC), `AppleRTL815XComposite109.kext`, `AppleRTL815XEthernet109.kext` | [Item page](https://support.lenovo.com/au/en/solutions/acc100356) |
 | HiDPI *(Optional)*                   | ⚠️      | Shell Script from xzhih [Click Here](https://github.com/xzhih/one-key-hidpi) | May have werid scaling issues after wake up                  |
+| Battery life                         | ✅      | Non-NVME SSD, proper power management setup (CPU Power Management, GPU Power Management) | Drops 10% per hour for light programming tasks               |
 
 [Back to Contents Page](#Contents)
 
-
+<hr>
 
 ### General installation procedure
+
 
 ##### STEP 1: Create Installation Media
 
@@ -254,30 +262,38 @@
             	- Reason: To enable HWP for better power management
          4. You have copied the boot files.
 
+
 [Back to Contents Page](#Contents)
 
-
+<hr>
 
 ### More to know
 
-- You may need to patch your DSDT
+- **DSDT Patching guide**
   - Follow guide here: [Link to Tonymacx86](https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/)
   - Patch files: [Link to tylerngyuen's Github repo](https://github.com/tylernguyen/x1c6-hackintosh)
-- If iMessages or FaceTime does not work, here's what you can do
+- **iMessage Guide**
   - Follow gudie here: [Link to Tonymacx86](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/)
-- You may want to improve the battery life
+- **Battery life improvement**
   - Follow guide here to enable native CPU/ GPU Power Management: [Link to Tonymacx86](https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/)
     - The CPU / GPU Power management is archieved by `CPUFriend.kext` and `CPUFriendDataProvider.kext` in my setup.
-  - Also note that there are currently no NVMe power managemenet for Hackintosh, use M.2. SATA if you care about battery life.
-- If you have a ThinkPad Thunderbolt 3 Dock (Type 40AC) as I do
+  - Do not use NVMe (PCIe) SSD for Hackintosh if you are about battery life
+- **ThinkPad Thunderbolt 3 Dock (Type 40AC) Tweaks**
   - Download the requried software for working Ethernet
     - Link here: [Click me](https://gist.github.com/MadLittleMods/3005bb13f7e7178e1eaa9f054cc547b0)
-- If you have other other suggestions
+- **Thunderbolt Tweaks**
+	- Principles and patching guide
+		- Link here: [Click me](https://osy.gitbook.io/hac-mini-guide/details/thunderbolt-3-fix)
+	- SSDT
+		- Link here: [Click me](https://www.tonymacx86.com/threads/in-progress-ssdt-for-thunderbolt-3-hotplug.248784/)
+	- IOElectrify for hot plugging support
+		- Link here: [Click me](https://github.com/the-darkvoid/macOS-IOElectrify)
+- **If you have other other suggestions**
   - Talk on Github
 
 [Back to Contents Page](#Contents)
 
-
+<hr>
 
 ### Useful utilities
 
@@ -289,17 +305,19 @@
 
 [Back to Contents Page](#Contents)
 
-
+<hr>
 
 ### Credits
 
 - Rehabman for most of the resources and guides
 - Tonymacx86 as a discussion platform and hosts most resources
 - P1LGRIM an iDiot's guide for iMessage, Link: [iDiot's guide for iMessage](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/)
-- tylerngyuen for ACPI patch files, Link: [ylernguyen](https://github.com/tylernguyen)/[x1c6-hackintosh](https://github.com/tylernguyen/x1c6-hackintosh)
+- tylerngyuen for ACPI patch files, Link: [tylernguyen](https://github.com/tylernguyen)/[x1c6-hackintosh](https://github.com/tylernguyen/x1c6-hackintosh)
+- LeleTuratti for Thunderbolt 3 SSDT, Link: [[In progress] SSDT for Thunderbolt 3 Hotplug](https://www.tonymacx86.com/threads/in-progress-ssdt-for-thunderbolt-3-hotplug.248784/)
 - The darkvoid for macOS-IOElectrify, Link: [macOS-IOElectrify](https://github.com/the-darkvoid/macOS-IOElectrify)
+- HaC Mini Hackintosh for Thunderbolt 3 Fix, Link: [Thunderbolt 3 Fix (Part 1)](https://osy.gitbook.io/hac-mini-guide/details/thunderbolt-3-fix)
 - noobsplanet for Internal SD Card reader patch, Link: [Internal SD Card reader patch](https://noobsplanet.com/index.php?threads/fix-internal-external-card-reader-hackintosh-guide.32/)
-- MadLittleMods for Ethernet on ThinkPad Thunderbolt 3 dock
+- MadLittleMods for Ethernet on ThinkPad Thunderbolt 3 dock, Link: [realtek-rtl-8153-driver-osx-info.md](https://gist.github.com/MadLittleMods/3005bb13f7e7178e1eaa9f054cc547b0)
 - acidanthera for AppleALC, Link: [AppleALC](https://github.com/acidanthera/AppleALC)
 - acidanthera for Lilu, Link: [Lilu](https://github.com/acidanthera/Lilu)
 - acidanthera for WhateverGreen, Link: [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
@@ -312,4 +330,6 @@
 
 [Back to Contents Page](#Contents)
 
-Last update: 2019-10-27
+<hr>
+
+Last update: 2019-10-29
