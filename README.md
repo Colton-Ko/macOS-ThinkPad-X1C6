@@ -74,10 +74,13 @@
 #### Compatibility
 
 - macOS Mojave
-	- 10.14.6	04-09-2019
+	- 10.14.6
+		- 04-09-2019
 - macOS Catalina
-	- 10.15		06-10-2019
-	- 10.15.1	30-10-2019
+	- 10.15		
+		- 06-10-2019
+	- 10.15.1	
+		- 30-10-2019
 
 [Back to Contents Page](#Contents)
 
