@@ -4,7 +4,8 @@
 
 > This repository provides some necessary resources to install a copy of macOS on ThinkPad X1 Carbon 6th. There is no guarantee of success, therefore you are expected to find extra resources to meet your needs, and be responsible for any consequences. **For Machine Type 20KH Only**
 
-<hr>
+<br>
+
 
 ### Objective
 
@@ -12,7 +13,8 @@
 - To prevent myself from forgetting how to instal macOS on ThinkPad X1 Carbon 6th
 - To share the resources for others who might want to do the same thing
 
-<hr>
+<br>
+
 
 ### Contents
 
@@ -26,7 +28,8 @@
 6. [Useful utilities](#Useful-utilities)
 7. [Credits](#Credits)
 
-<hr>
+<br>
+
 
 ### Hardware Specifications
 
@@ -47,7 +50,8 @@
 
 [Back to Contents Page](#Contents)
 
-<hr>
+<br>
+
 
 ### UEFI Setup Configuration
 
@@ -62,18 +66,23 @@
 
 [Back to Contents Page](#Contents)
 
-<hr>
+<br>
+
 
 ### Software Overview
 
 #### Compatibility
 
-- 10.14.x (macOS Mojave)
-- 10.15.x (macOS Catalina)
+- macOS Mojave
+	- 10.14.6	04-09-2019
+- macOS Catalina
+	- 10.15		06-10-2019
+	- 10.15.1	30-10-2019
 
 [Back to Contents Page](#Contents)
 
-<hr>
+<br>
+
 
 #### Features
 
@@ -106,15 +115,17 @@
 | Full Graphics Accleration (QE/CI)    | ✅      | `WhateverGreen.kext`                                         | -                                                            |
 | Micro SD Card Reader                 | ✅      | Patched `AppleUSBCardReader.kext`                            | -                                                            |
 | USB 3.1                              | ✅      | `USBInjectAll.kext` , `SSDT-UAIC.aml`                        | -                                                            |
+| DisplayPort on Thunderbolt 3 Dock    | ⚠️      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | The charging Type-C port **does not** support DisplayPort    |
 | Thunderbolt 3 Dock (Port Replicator) | ✅      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | -                                                            |
-| Thunderbolt 3 Hotplug                | ✅      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | -                                                            |
+| Thunderbolt 3 Hotplug                | ⚠️      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | The charging Type-C port **does not** support Hotpluging     |
 | ThinkPad TB3 Dock Ethernet           | ✅      | ThinkPad Thunderbolt 3 Dock (40AC), `AppleRTL815XComposite109.kext`, `AppleRTL815XEthernet109.kext` | [Item page](https://support.lenovo.com/au/en/solutions/acc100356) |
 | HiDPI *(Optional)*                   | ⚠️      | Shell Script from xzhih [Click Here](https://github.com/xzhih/one-key-hidpi) | May have werid scaling issues after wake up                  |
 | Battery life                         | ✅      | Non-NVME SSD, proper power management setup (CPU Power Management, GPU Power Management) | Drops 10% per hour for light programming tasks               |
 
 [Back to Contents Page](#Contents)
 
-<hr>
+<br>
+
 
 ### General installation procedure
 
@@ -293,7 +304,8 @@
 
 [Back to Contents Page](#Contents)
 
-<hr>
+<br>
+
 
 ### Useful utilities
 
@@ -305,7 +317,8 @@
 
 [Back to Contents Page](#Contents)
 
-<hr>
+<br>
+
 
 ### Credits
 
@@ -330,6 +343,7 @@
 
 [Back to Contents Page](#Contents)
 
-<hr>
+<br>
+
 
 Last update: 2019-10-29
