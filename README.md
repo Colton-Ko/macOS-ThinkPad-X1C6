@@ -99,7 +99,7 @@
 | iTunes Video Playback                | ✅      | `WhateverGreen.kext`, Apple ID (*Optional*)                  | -                                                            |
 | Continuty                            | ✅      | `BT4LEContiunityFixup.kext`, Working Blutetooth and WiFi setup | -                                                            |
 | AirDrop                              | ✅      | `BT4LEContiunityFixup.kext`, Working Blutetooth and WiFi setup | -                                                            |
-| Sidecar                              | ❓      | ❓                                                            | Not tested                                                   |
+| Sidecar                              | ✅      | iPad with iPadOS 13                                          | Tested with iPad Pro with iPadOS 13.1.2                      |
 | Bluetooth                            | ✅      | `BrcmFirmwareRepo.kext`, `BrcmPatchRAM2.kext`, `BrcmBluetoothInjector.kext` | -                                                            |
 | TrackPoint                           | ✅      | Patched `VoodooPS2Controller.kext`                           | -                                                            |
 | TrackPad                             | ✅      | `VoodooPS2Controller.kext`                                   | -                                                            |
