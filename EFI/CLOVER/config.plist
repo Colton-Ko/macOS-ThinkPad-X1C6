@@ -6,6 +6,8 @@
 	<dict>
 		<key>Comment-DisabledAML</key>
 		<string>Disable other forms of CPU PM due to SSDT/Generate/PluginType=true</string>
+		<key>AutoMerge</key>
+		<true/>
 		<key>DSDT</key>
 		<dict>
 			<key>DropOEM_DSM</key>
@@ -33,13 +35,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					R0ZYMA==
-					</data>
+					<data>R0ZYMA==</data>
 					<key>Replace</key>
-					<data>
-					SUdQVQ==
-					</data>
+					<data>SUdQVQ==</data>
 				</dict>
 			</array>
 		</dict>
@@ -77,14 +75,10 @@
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>#DefaultVolume</key>
-		<string>LastBootedVolume</string>
 		<key>Arguments</key>
 		<string>dart=0 lilucpu=9 alcid=11 darkwake=0</string>
 		<key>DefaultLoader</key>
 		<string>boot.efi</string>
-		<key>DefaultVolume</key>
-		<string>Catalina</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>NoEarlyProgress</key>
@@ -115,111 +109,63 @@
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
-		<key>FakeID</key>
-		<dict>
-			<key>#IntelGFX</key>
-			<string>0x59168086</string>
-			<key>#Kaby Lake-Comment</key>
-			<string>To avoid automatic Clover fake device-id (Skylake) injection</string>
-		</dict>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0)/Pci(0x02,0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>
-				AAAbWQ==
-				</data>
+				<data>AAAbWQ==</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal</string>
 				<key>device-id</key>
-				<data>
-				FlkAAA==
-				</data>
+				<data>FlkAAA==</data>
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
 				<key>enable-hdmi20</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con0-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con0-pipe</key>
-				<data>
-				EgAAAA==
-				</data>
+				<data>EgAAAA==</data>
 				<key>framebuffer-con0-type</key>
-				<data>
-				AAQAAA==
-				</data>
+				<data>AAQAAA==</data>
 				<key>framebuffer-con1-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-flags</key>
-				<data>
-				hwEAAA==
-				</data>
+				<data>hwEAAA==</data>
 				<key>framebuffer-con1-pipe</key>
-				<data>
-				EgAAAA==
-				</data>
+				<data>EgAAAA==</data>
 				<key>framebuffer-con1-type</key>
-				<data>
-				AAgAAA==
-				</data>
+				<data>AAgAAA==</data>
 				<key>framebuffer-con2-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con2-flags</key>
-				<data>
-				hwEAAA==
-				</data>
+				<data>hwEAAA==</data>
 				<key>framebuffer-con2-pipe</key>
-				<data>
-				EgAAAA==
-				</data>
+				<data>EgAAAA==</data>
 				<key>framebuffer-con2-type</key>
-				<data>
-				AAgAAA==
-				</data>
+				<data>AAgAAA==</data>
 				<key>framebuffer-con3-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con3-flags</key>
-				<data>
-				hwEAAA==
-				</data>
+				<data>hwEAAA==</data>
 				<key>framebuffer-con3-pipe</key>
-				<data>
-				EgAAAA==
-				</data>
+				<data>EgAAAA==</data>
 				<key>framebuffer-con3-type</key>
-				<data>
-				AAgAAA==
-				</data>
+				<data>AAgAAA==</data>
 				<key>framebuffer-fbmem</key>
-				<data>
-				AACQAA==
-				</data>
+				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<integer>1</integer>
 				<key>framebuffer-stolenmem</key>
-				<data>
-				AAAwAQ==
-				</data>
+				<data>AAAwAQ==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 			</dict>
 			<key>PciRoot(0)/Pci(0x1f,3)</key>
 			<dict>
 				<key>#PinConfigurations</key>
-				<data>
-				</data>
+				<data></data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>layout-id</key>
@@ -305,13 +251,8 @@
 	</dict>
 	<key>Graphics</key>
 	<dict>
-		<key>#EDID</key>
-		<dict>
-			<key>Inject</key>
-			<false/>
-		</dict>
-		<key>#ig-platform-id</key>
-		<string>0x591b0000</string>
+		<key>ig-platform-id</key>
+		<string>0x59160000</string>
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
@@ -344,13 +285,9 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				ILniAAAADzA=
-				</data>
+				<data>ILniAAAADzA=</data>
 				<key>Replace</key>
-				<data>
-				ILniAAAAkJA=
-				</data>
+				<data>ILniAAAAkJA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -358,15 +295,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				igKEwHRE
-				</data>
+				<data>igKEwHRE</data>
 				<key>MatchOS</key>
 				<string>10.13.x</string>
 				<key>Replace</key>
-				<data>
-				igKEwOtE
-				</data>
+				<data>igKEwOtE</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -374,15 +307,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				igKEwHRC
-				</data>
+				<data>igKEwHRC</data>
 				<key>MatchOS</key>
 				<string>10.14.x</string>
 				<key>Replace</key>
-				<data>
-				igKEwOtC
-				</data>
+				<data>igKEwOtC</data>
 			</dict>
 		</array>
 		<key>KextsToPatch</key>
@@ -393,17 +322,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				PHN0cmluZz5JbnRlcm5hbDwvc3RyaW5nPg==
-				</data>
+				<data>PHN0cmluZz5JbnRlcm5hbDwvc3RyaW5nPg==</data>
 				<key>InfoPlistPatch</key>
 				<true/>
 				<key>Name</key>
 				<string>AppleUSBCardReader</string>
 				<key>Replace</key>
-				<data>
-				PHN0cmluZz5FeHRlcm5hbDwvc3RyaW5nPg==
-				</data>
+				<data>PHN0cmluZz5FeHRlcm5hbDwvc3RyaW5nPg==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -411,17 +336,13 @@
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				PHN0cmluZz5BUFBMRTwvc3RyaW5nPg==
-				</data>
+				<data>PHN0cmluZz5BUFBMRTwvc3RyaW5nPg==</data>
 				<key>InfoPlistPatch</key>
 				<true/>
 				<key>Name</key>
 				<string>AppleUSBCardReader</string>
 				<key>Replace</key>
-				<data>
-				PHN0cmluZz5JQ0E8L3N0cmluZz4=
-				</data>
+				<data>PHN0cmluZz5JQ0E8L3N0cmluZz4=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -429,17 +350,13 @@
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				PGludGVnZXI+MzM3OTU8L2ludGVnZXI+
-				</data>
+				<data>PGludGVnZXI+MzM3OTU8L2ludGVnZXI+</data>
 				<key>InfoPlistPatch</key>
 				<true/>
 				<key>Name</key>
 				<string>AppleUSBCardReader</string>
 				<key>Replace</key>
-				<data>
-				PGludGVnZXI+ODA4PC9pbnRlZ2VyPg==
-				</data>
+				<data>PGludGVnZXI+ODA4PC9pbnRlZ2VyPg==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -447,17 +364,13 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				PGludGVnZXI+MTQ1MjwvaW50ZWdlcj4=
-				</data>
+				<data>PGludGVnZXI+MTQ1MjwvaW50ZWdlcj4=</data>
 				<key>InfoPlistPatch</key>
 				<true/>
 				<key>Name</key>
 				<string>AppleUSBCardReader</string>
 				<key>Replace</key>
-				<data>
-				PGludGVnZXI+MzAzNDwvaW50ZWdlcj4=
-				</data>
+				<data>PGludGVnZXI+MzAzNDwvaW50ZWdlcj4=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -465,17 +378,13 @@
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				PGludGVnZXI+MzM3OTY8L2ludGVnZXI+
-				</data>
+				<data>PGludGVnZXI+MzM3OTY8L2ludGVnZXI+</data>
 				<key>InfoPlistPatch</key>
 				<true/>
 				<key>Name</key>
 				<string>AppleUSBCardReader</string>
 				<key>Replace</key>
-				<data>
-				PGludGVnZXI+ODA4PC9pbnRlZ2VyPg==
-				</data>
+				<data>PGludGVnZXI+ODA4PC9pbnRlZ2VyPg==</data>
 			</dict>
 		</array>
 	</dict>
@@ -523,10 +432,10 @@
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
-		<key>InjectKexts</key>
-		<string>Detect</string>
 		<key>InjectSystemID</key>
 		<true/>
+		<key>InjectKexts</key>
+		<string>Yes</string>
 	</dict>
 </dict>
 </plist>

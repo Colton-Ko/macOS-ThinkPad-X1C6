@@ -100,7 +100,7 @@
 | Continuty                            | ✅      | `BT4LEContiunityFixup.kext`, Working Blutetooth and WiFi setup | -                                                            |
 | AirDrop                              | ✅      | `BT4LEContiunityFixup.kext`, Working Blutetooth and WiFi setup | -                                                            |
 | Sidecar                              | ✅      | iPad with iPadOS 13                                          | Tested with iPad Pro with iPadOS 13.1.2                      |
-| Bluetooth                            | ✅      | `BrcmFirmwareRepo.kext`, `BrcmPatchRAM2.kext`, `BrcmBluetoothInjector.kext` | -                                                            |
+| Bluetooth                            | ✅      | `BrcmFirmwareRepo.kext`, `BrcmPatchRAM3.kext`, `BrcmBluetoothInjector.kext` | -                                                            |
 | TrackPoint                           | ✅      | Patched `VoodooPS2Controller.kext`                           | -                                                            |
 | TrackPad                             | ✅      | `VoodooPS2Controller.kext`                                   | -                                                            |
 | Built-in Keyboard                    | ✅      | `VoodooPS2Controller.kext`                                   | -                                                            |
@@ -335,7 +335,9 @@
 - noobsplanet for Internal SD Card reader patch, Link: [Internal SD Card reader patch](https://noobsplanet.com/index.php?threads/fix-internal-external-card-reader-hackintosh-guide.32/)
 - MadLittleMods for Ethernet on ThinkPad Thunderbolt 3 dock, Link: [realtek-rtl-8153-driver-osx-info.md](https://gist.github.com/MadLittleMods/3005bb13f7e7178e1eaa9f054cc547b0)
 - acidanthera for AppleALC, Link: [AppleALC](https://github.com/acidanthera/AppleALC)
+- PMHeart for LiluFriend, Link: [LiluFriend](https://github.com/PMheart/LiluFriend)
 - acidanthera for Lilu, Link: [Lilu](https://github.com/acidanthera/Lilu)
+- acidanthera for BrcmPatchRAM, Link: [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM)
 - acidanthera for WhateverGreen, Link: [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
 - xzhih for one-key-hidpi, Link: [one-key-hidpi](https://github.com/xzhih/one-key-hidpi)
 - headkaze for Hackintool, Link: [Hackintool](https://www.tonymacx86.com/threads/release-hackintool-v2-8-0.254559/)
@@ -349,4 +351,4 @@
 <br>
 
 
-Last update: 2019-10-29
+Last update: 2019-11-10
