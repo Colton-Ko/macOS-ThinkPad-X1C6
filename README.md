@@ -1,9 +1,5 @@
 # macOS-ThinkPad-X1C6
 
-### Update
-
-
-
 ### Introduction
 
 This repository provides some necessary resources to install a copy of macOS on ThinkPad X1 Carbon 6th.
@@ -66,12 +62,18 @@ There is no guarantee of success, therefore you are expected to find extra resou
 
 **Only listing values that matters. Feel free to configure other values to suit your needs.**
 
-| Path                         | Value    | Remarks                                                      |
-| ---------------------------- | -------- | ------------------------------------------------------------ |
-| Secure Boot                  | Disabled | Unable to boot macOS if enabled                              |
-| Thunderbolt 3 BIOS Assistant | Disabled | No Thunderbolt 3 if enabled                                  |
-| Wake on LAN                  | Disabled | Only 100M Ethernet if enabled                                |
-| Boot mode                    | Both     | It can be set as any mode you want as long as you enable UEFI booting. |
+| Path                                                         | Value        | Remarks                                                      |
+| ------------------------------------------------------------ | ------------ | ------------------------------------------------------------ |
+| Config/Network/Wake On LAN                                   | Disabled     | Only 100M Ethernet if enabled                                |
+| Config/USB/USB UEFI BIOS Support                             | Enabled      | Enable UEFI USB boot                                         |
+| Config/Power/8254 Timer Clock Gating                         | Auto         | -                                                            |
+| Config/Power/Sleep State                                     | Linux        | -                                                            |
+| Config/Thunderbolt (TM) 3/Thunderbolt Security Level         | No Security  | No Thunderbolt 3 if enabled                                  |
+| Config/Thunderbolt (TM) 3/Thunderbolt 3 BIOS Assistant       | Disabled     | No Thunderbolt 3 if enabled                                  |
+| Config/Thunderbolt (TM) 3/Support in Pre Boot Environment: Thunderbolt (TM) device | Pre-boot ACL | No Front Thunderbolt 3 (Type-C port) if changed to other values |
+| Security/Intel (R) SGX/ Intel (R) SGX Control                | Disabled     | -                                                            |
+| Security/Secure Boot Configuration/SecureBoot                | Disabled     | Unable to boot macOS if enabled (Requires digitally signed executables) |
+| Security/Device Guard/Device Guard                           | Disabled     | -                                                            |
 
 [Back to Contents Page](#Contents)
 
