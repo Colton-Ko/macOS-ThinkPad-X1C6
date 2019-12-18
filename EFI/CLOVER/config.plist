@@ -4,8 +4,6 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
-		<key>Comment-DisabledAML</key>
-		<string>Disable other forms of CPU PM due to SSDT/Generate/PluginType=true</string>
 		<key>AutoMerge</key>
 		<true/>
 		<key>DSDT</key>
@@ -102,6 +100,19 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
+		<key>AddProperties</key>
+		<array>
+			<dict>
+				<key>Device</key>
+				<string>IntelGFX</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>AAPL,GfxYTile</string>
+				<key>Value</key>
+				<data>AQAAAA==</data>
+			</dict>
+		</array>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
@@ -164,8 +175,6 @@
 			</dict>
 			<key>PciRoot(0)/Pci(0x1f,3)</key>
 			<dict>
-				<key>#PinConfigurations</key>
-				<data></data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>layout-id</key>
@@ -281,6 +290,18 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>Disable panic kext logging on 10.14.x,10.15.x Release kernel</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>igKEwHRH</data>
+				<key>MatchOS</key>
+				<string>10.14.x,10.15.x</string>
+				<key>Replace</key>
+				<data>igKEwOtH</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha</string>
 				<key>Disabled</key>
 				<false/>
@@ -288,18 +309,6 @@
 				<data>ILniAAAADzA=</data>
 				<key>Replace</key>
 				<data>ILniAAAAkJA=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable panic kext logging on 10.13 release kernel (credit vit9696)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>igKEwHRE</data>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
-				<key>Replace</key>
-				<data>igKEwOtE</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -318,45 +327,15 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>X1 C6 USB SD CardReader Patch #1</string>
+				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
+				<true/>
+				<key>InfoPlistPatch</key>
 				<false/>
-				<key>Find</key>
-				<data>PHN0cmluZz5JbnRlcm5hbDwvc3RyaW5nPg==</data>
-				<key>InfoPlistPatch</key>
-				<true/>
 				<key>Name</key>
-				<string>AppleUSBCardReader</string>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
 				<key>Replace</key>
-				<data>PHN0cmluZz5FeHRlcm5hbDwvc3RyaW5nPg==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>X1 C6 USB SD CardReader Patch #2</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>PHN0cmluZz5BUFBMRTwvc3RyaW5nPg==</data>
-				<key>InfoPlistPatch</key>
-				<true/>
-				<key>Name</key>
-				<string>AppleUSBCardReader</string>
-				<key>Replace</key>
-				<data>PHN0cmluZz5JQ0E8L3N0cmluZz4=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>X1 C6 USB SD CardReader Patch #3</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>PGludGVnZXI+MzM3OTU8L2ludGVnZXI+</data>
-				<key>InfoPlistPatch</key>
-				<true/>
-				<key>Name</key>
-				<string>AppleUSBCardReader</string>
-				<key>Replace</key>
-				<data>PGludGVnZXI+ODA4PC9pbnRlZ2VyPg==</data>
+				<data>AAAAAAAAAAAAAAA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -374,17 +353,17 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>X1 C6 USB SD CardReader Patch #5</string>
+				<string>X1 C6 USB SD CardReader Patch #1</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
-				<data>PGludGVnZXI+MzM3OTY8L2ludGVnZXI+</data>
+				<data>PHN0cmluZz5JbnRlcm5hbDwvc3RyaW5nPg==</data>
 				<key>InfoPlistPatch</key>
 				<true/>
 				<key>Name</key>
 				<string>AppleUSBCardReader</string>
 				<key>Replace</key>
-				<data>PGludGVnZXI+ODA4PC9pbnRlZ2VyPg==</data>
+				<data>PHN0cmluZz5FeHRlcm5hbDwvc3RyaW5nPg==</data>
 			</dict>
 		</array>
 	</dict>

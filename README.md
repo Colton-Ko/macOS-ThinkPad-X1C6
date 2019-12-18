@@ -1,8 +1,13 @@
 # macOS-ThinkPad-X1C6
 
+### Update
+
+
+
 ### Introduction
 
-> This repository provides some necessary resources to install a copy of macOS on ThinkPad X1 Carbon 6th. There is no guarantee of success, therefore you are expected to find extra resources to meet your needs, and be responsible for any consequences. **For Machine Type 20KH Only**
+This repository provides some necessary resources to install a copy of macOS on ThinkPad X1 Carbon 6th.
+There is no guarantee of success, therefore you are expected to find extra resources to meet your needs, and be responsible for any consequences. **For Machine Type 20KH Only**
 
 <br>
 
@@ -42,11 +47,15 @@
 | Memory                      | Onboard 16GB LPDDR3 2133MHz                                 |
 | Audio Codec                 | Realtek ALC 285 (ALC3286)                                   |
 | WWAN                        | Sierra Wireless EM7455 (Qualcomm Snapdragon X7 LTE-A Modem) |
-| WLAN/ Bluetooth             | Dell DW1560                                                 |
+| PCI Ethernet                | Intel I219V4 PCI Express Gigabit Ethernet                   |
+| WLAN/ Bluetooth Module      | Dell DW1560                                                 |
+| Bluetooth                   | BCM20702A0                                                  |
+| Wi-Fi                       | Broadcom BCM94352Z                                          |
 | Media Card Reader           | Realtek USB3.0 Card Reader                                  |
 | Built-in Display Resolution | 2560x1440 (2K)                                              |
-| UEFI Firmware Version       | 1.41 (N23ET66W)                                             |
+| UEFI Firmware Version       | 1.43 (N23ET68W)                                             |
 | Storage                     | Samsung 860 EVO M.2. SATA 6Gb/s SSD                         |
+| Thunderbolt Controller      | Intel Alpine Ridge DSL6540 Thunderbolt 3 NHI                |
 
 [Back to Contents Page](#Contents)
 
@@ -57,7 +66,7 @@
 
 **Only listing values that matters. Feel free to configure other values to suit your needs.**
 
-| Item                         | Value    | Remarks                                                      |
+| Path                         | Value    | Remarks                                                      |
 | ---------------------------- | -------- | ------------------------------------------------------------ |
 | Secure Boot                  | Disabled | Unable to boot macOS if enabled                              |
 | Thunderbolt 3 BIOS Assistant | Disabled | No Thunderbolt 3 if enabled                                  |
@@ -75,12 +84,14 @@
 
 - macOS Mojave
 	- 10.14.6
-		- 04-09-2019
+		- 2019-09-04
 - macOS Catalina
 	- 10.15		
-		- 06-10-2019
+		- 2019-10-06
 	- 10.15.1	
-		- 30-10-2019
+		- 2019-10-30
+	- 10.15.2
+		- 2019-12-18
 
 [Back to Contents Page](#Contents)
 
@@ -91,7 +102,7 @@
 
 | Feature                              | Status | Dependency                                                   | Remarks                                                      |
 | :----------------------------------- | ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| macOS (10.14.x or 10.15.x)           | ✅      | `VirtualSMC.kext`, `Lilu.kext`,Clover Bootloader             | Clover v2.5k R5093                                           |
+| macOS (10.14.x or 10.15.x)           | ✅      | `VirtualSMC.kext`, `Lilu.kext`,Clover Bootloader             | Clover v2.5k R5100                                           |
 | App Store                            | ✅      | Apple ID                                                     | -                                                            |
 | iMessage/ FaceTime                   | ✅      | Whitelisted Apple ID, Valid SMBIOS                           | [Guide](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/) |
 | iCloud                               | ✅      | Apple ID                                                     | -                                                            |
@@ -118,9 +129,9 @@
 | Full Graphics Accleration (QE/CI)    | ✅      | `WhateverGreen.kext`                                         | -                                                            |
 | Micro SD Card Reader                 | ✅      | Patched `AppleUSBCardReader.kext`                            | -                                                            |
 | USB 3.1                              | ✅      | `USBInjectAll.kext` , `SSDT-UAIC.aml`                        | -                                                            |
-| DisplayPort on Thunderbolt 3 Dock    | ⚠️      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | The charging Type-C port **does not** support DisplayPort    |
+| DisplayPort on Thunderbolt 3 Dock    | ✅      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | -                                                            |
 | Thunderbolt 3 Dock (Port Replicator) | ✅      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | -                                                            |
-| Thunderbolt 3 Hotplug                | ⚠️      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | The charging Type-C port **does not** support Hotpluging     |
+| Thunderbolt 3 Hotplug                | ✅      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | -                                                            |
 | ThinkPad TB3 Dock Ethernet           | ✅      | ThinkPad Thunderbolt 3 Dock (40AC), `AppleRTL815XComposite109.kext`, `AppleRTL815XEthernet109.kext` | [Item page](https://support.lenovo.com/au/en/solutions/acc100356) |
 | HiDPI *(Optional)*                   | ⚠️      | Shell Script from xzhih [Click Here](https://github.com/xzhih/one-key-hidpi) | May have werid scaling issues after wake up                  |
 | Battery life                         | ✅      | Non-NVME SSD, proper power management setup (CPU Power Management, GPU Power Management) | Drops 10% per hour for light programming tasks               |
@@ -350,5 +361,5 @@
 
 <br>
 
+Last update: 2019-12-18
 
-Last update: 2019-11-10
