@@ -142,26 +142,127 @@ There is no guarantee of success, therefore you are expected to find extra resou
 
 <br>
 
-
 ### General installation procedure
 
+#### Flowchart
 
-##### STEP 1: Create Installation Media
+```mermaid
+graph TB;
 
-###### Checklist
+	begin("Begin Hackintosh Journey with ThinkPad X1 C6")-->getUSB
+	sorry["Installation failed, please report the problem so that I can help and improve"]
+	
+	subgraph Prepare macOS Installation USB
+		getUSB-->hvmac
+		hvmac{{"Do you have an usable Mac or Hackintosh?"}}
+		getInstaller["Download macOS Installer on macOS"]
+		getInstallerLinux["Create macOS installer USB on Linux"]
+		dosdude["Download macOS using macOS Patcher"]
+		mas["Download macOS using Mac App Store"]
+		getUSB["Get an USB with at least 16GB capacity"]
+		thankyou["Use the script from notthebee"]
+		createUSBmacOS["Use Unibeast to create the USB installer"]
+		installClover["Install bootloader"]
 
-- A working computer with macOS (or Mac OS X 10.7 or later)
+		
+		hvmac-->|Yes|getInstaller
+		hvmac-->|No|getInstallerLinux
+		getInstallerLinux-->thankyou
+		getInstaller-->dosdude
+		getInstaller-->mas
+		dosdude-->createUSBmacOS
+		mas-->createUSBmacOS
+		createUSBmacOS-->installClover
+		
+	end
+	
+  thankyou-->finish
+  installClover-->finish
+  finish("You have the USB installer ready")
+	finish-->changeBootOrder
+	
+	subgraph Part 1 of installation
+		changeBootOrder["Change the boot order of your ThinkPad"]
+		bootInstaller["Boot the macOS installer using Clover Menu"]
+		bootSuccess{{"Booted successfully?"}}
+		
+		partition["Partition your disks"]
+		startInstall["Begin macOS installation"]
+		installresult{{"Part 1 of install macOS completed successfully?"}}
+		reboot["Reboot your ThinkPad"]
+		
+		changeBootOrder-->bootInstaller
+		bootInstaller-->|Yes|bootSuccess
 
+		bootSuccess-->partition
+		partition-->startInstall
+		startInstall-->installresult
+
+
+
+		
+	end
+	bootInstaller-->|No|sorry
+	installresult-->|No|sorry
+	installresult-->|Yes|reboot
+	reboot["Reboot your ThinkPad"]
+	reboot-->startInstall2
+	
+	subgraph Part 2 of installation
+		startInstall2["Begin macOS installation part 2"]
+		install2result{{"Part 2 of install macOS completed successfully?"}}
+		reboot2["Reboot your ThinkPad"]
+		bootmac["Boot from installed macOS"]
+		boot2success?{{"Did macOS boot up successfully?"}}
+		startInstall2-->install2result
+		install2result-->|Yes|reboot2
+		reboot2-->bootmac
+		bootmac-->boot2success?
+		boot2success?-->|Yes|installSuccess
+
+	end
+	
+	installSuccess-->setupMac
+	
+	subgraph Post-install
+		setupMac["Setup your macOS on ThinkPad using Setup Assistant"]
+		installKext["Install necessary Kernel Extensions"]
+		disableHibernate["Disable hibernation"]
+		fineTune["Fine tune your Hackintosh with the textual resources provided"]
+		setupMac-->installKext
+		installKext-->disableHibernate
+		disableHibernate-->fineTune
+		
+	end
+	
+	complete["Installation complete and fine-tuned! Congratulations"]
+	fineTune-->complete
+
+	boot2success?-->|No|sorry
+	install2result-->|No|sorry
+	bootmac-->|No|sorry
+	installSuccess["macOS installation is successful"]
+```
+
+
+
+
+#### STEP 1: Create Installation Media
+
+##### Checklist
+
+- A working computer with macOS (or Mac OS X 10.7 or later) 
+- A working computer with Linux
 - A working USB drive with 16GB or more capacity
-
 - *Internet connection* (Not required if you already have the installer)
-
 - A copy of macOS installation medium
   - For macOS Mojave click [here](http://dosdude1.com/mojave/) to get the application to download a copy of macOS Mojave installer.
   - For macOS Catalina click [here](http://dosdude1.com/catalina/) to get the application to download a copy of macOS Catalina installer.
   - Download macOS Catalina from the App Store
 
-###### Procedure
+##### Procedure
+
+###### If you are using macOS
 
 1. Follow the gudie [here](https://support.apple.com/en-us/HT201372)
 2. Copy boot files to the USB such that it is bootable on ThinkPad
@@ -174,6 +275,10 @@ There is no guarantee of success, therefore you are expected to find extra resou
       2. Copy the entire `EFI` Folder to the root of the EFI System partition of the USB.
       3. You have copied the boot files.
    3. Finished. Move on to step 2.
+
+###### If you are using Linux
+
+1. Use the script here: https://github.com/notthebee/macos_usb (Credit: notthebee)
 
 <hr>
 
@@ -304,7 +409,7 @@ There is no guarantee of success, therefore you are expected to find extra resou
 - **Battery life improvement**
   - Follow guide here to enable native CPU/ GPU Power Management: [Link to Tonymacx86](https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/)
     - The CPU / GPU Power management is archieved by `CPUFriend.kext` and `CPUFriendDataProvider.kext` in my setup.
-  - Do not use NVMe (PCIe) SSD for Hackintosh if you are about battery life
+  - Do not use NVMe (PCIe) SSD for Hackintosh if you care about battery life
 - **ThinkPad Thunderbolt 3 Dock (Type 40AC) Tweaks**
   - Download the requried software for working Ethernet
     - Link here: [Click me](https://gist.github.com/MadLittleMods/3005bb13f7e7178e1eaa9f054cc547b0)
@@ -357,11 +462,12 @@ There is no guarantee of success, therefore you are expected to find extra resou
 - Sascha77 for Kext Updater, Link: [Kext Updater](https://www.insanelymac.com/forum/topic/334222-kext-updater-keep-your-kexts-fresh-with-only-one-click/)
 - MacMan for Kext Beast, Link: [Kext Beast](https://www.tonymacx86.com/resources/kextbeast-2-0-2.399/)
 - Mackie100 for Clover Configurator, Link: [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
+- notthebee for macOS USB Creator, Link: [macos_usb](https://github.com/notthebee/macos_usb)
 - All contributors in the hackintosh community
 
 [Back to Contents Page](#Contents)
 
 <br>
 
-Last update: 2019-12-18
+Last update: 2019-12-20
 
