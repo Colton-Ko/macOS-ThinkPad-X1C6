@@ -398,7 +398,7 @@ There is no guarantee of success, therefore you are expected to find extra resou
      | `framebuffer-patch-enable` | Data | `01000000` |
      | `framebuffer-stolenmem`    | Data | `00003001` |
 
-  4. Result (Xcode as plist editor)![igfx-fix](/Users/xko/Documents/GitHub/macOS-ThinkPad-X1C6/README.assets/igfx-fix.png)
+  4. Result (Xcode as plist editor)![igfx-fix](./README.assets/igfx-fix.png)
 
   5. Reboot
 
@@ -413,9 +413,9 @@ There is no guarantee of success, therefore you are expected to find extra resou
 
   - Gather Information
 
-    1. Open System Report in About this Mac![about-this-mac](/Users/xko/Documents/GitHub/macOS-ThinkPad-X1C6/README.assets/about-this-mac.png)
+    1. Open System Report in About this Mac![about-this-mac](./README.assets/about-this-mac.png)
 
-    2. Go to Hardware/USB/USB3.0-CRW![usb-card-info-list](/Users/xko/Documents/GitHub/macOS-ThinkPad-X1C6/README.assets/usb-card-info-list.png)
+    2. Go to Hardware/USB/USB3.0-CRW![usb-card-info-list](./README.assets/usb-card-info-list.png)
 
     3. Pay attention to Product ID and Vendor ID, convert them to decimal
 
@@ -426,10 +426,10 @@ There is no guarantee of success, therefore you are expected to find extra resou
 
     4. Update `idVendor` and `idProduct` in `Apple_internal_SD_Card_Reader_1_00` and `Apple_internal_SD_Card_Reader_2_00` dictionary found in `/System/Library/Extensions/AppleStorageDrivers.kext/Contents/PlugIns/AppleUSBCardReader.kext/Contents/Info.plist`.
 
-       1. Before ![before-change-usbcr](/Users/xko/Documents/GitHub/macOS-ThinkPad-X1C6/README.assets/before-change-usbcr.png)
-       2. After![affter-chagne-cr](/Users/xko/Documents/GitHub/macOS-ThinkPad-X1C6/README.assets/affter-chagne-cr.png)
+       1. Before ![before-change-usbcr](./README.assets/before-change-usbcr.png)
+       2. After![affter-chagne-cr](./README.assets/affter-chagne-cr.png)
 
-    5. Update `Physical Interconnect Location` field from `Internal` to `External` in `Apple_internal_SD_Card_Reader_1_00` and `Apple_internal_SD_Card_Reader_2_00` dictionary found in `/System/Library/Extensions/AppleStorageDrivers.kext/Contents/PlugIns/AppleUSBCardReader.kext/Contents/Info.plist`.![after-change-to-external-usbcr](/Users/xko/Documents/GitHub/macOS-ThinkPad-X1C6/README.assets/after-change-to-external-usbcr.png)
+    5. Update `Physical Interconnect Location` field from `Internal` to `External` in `Apple_internal_SD_Card_Reader_1_00` and `Apple_internal_SD_Card_Reader_2_00` dictionary found in `/System/Library/Extensions/AppleStorageDrivers.kext/Contents/PlugIns/AppleUSBCardReader.kext/Contents/Info.plist`.![after-change-to-external-usbcr](./README.assets/after-change-to-external-usbcr.png)
 
     6. Run the following in terminal
 
