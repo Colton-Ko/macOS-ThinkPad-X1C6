@@ -6,16 +6,14 @@
 
 The README.md guide for OpenCore is being worked on. It will be published once the README.md for OpenCore is ready.
 
-<br>
 
-## CLOVER
+
+## OpenCore	![OpenCore Version](https://img.shields.io/badge/OpenCore-0.5.4-brightgreen)
 
 ### Introduction
 
 This repository provides some necessary resources to install a copy of macOS on ThinkPad X1 Carbon 6th.
 There is no guarantee of success, therefore you are expected to find extra resources to meet your needs, and be responsible for any consequences. **For Machine Type 20KH Only**.
-
-<br>
 
 
 ### Objective
@@ -23,9 +21,7 @@ There is no guarantee of success, therefore you are expected to find extra resou
 - Gather resources for a successful macOS installation on ThinkPad X1 Carbon 6th
 - To prevent myself from forgetting how to instal macOS on ThinkPad X1 Carbon 6th
 - To share the resources for others who might want to do the same thing
-- To keep the last-known-good clover configuration
-
-<br>
+- To get used to OpenCore bootloader and port OpenCore configuration to other machines
 
 
 ### Contents
@@ -35,12 +31,16 @@ There is no guarantee of success, therefore you are expected to find extra resou
 3. [Software Overview](#Software-Overview)
    1. [Guide Compatibility](#Compatibility)
    2. [Features](#Features)
+      1. [Base System](#Base-System)
+      2. [Connectivity](#Connectivity)
+      3. [Networking](#Networking)
+      4. [Human Interface Devices](#Human-Interface-Devices)
+      5. [Power Management](#Power-Management)
+      6. [Audio and Graphics](#Audio-and-Graphics)
 4. [General installation procedure](#General-installation-procedure)
 5. [More to know](#More-to-know)
 6. [Useful utilities](#Useful-utilities)
 7. [Credits](#Credits)
-
-<br>
 
 
 ### Hardware Specifications
@@ -66,8 +66,6 @@ There is no guarantee of success, therefore you are expected to find extra resou
 
 [Back to Contents Page](#Contents)
 
-<br>
-
 
 ### UEFI Setup Configuration
 
@@ -88,8 +86,6 @@ There is no guarantee of success, therefore you are expected to find extra resou
 
 [Back to Contents Page](#Contents)
 
-<br>
-
 
 ### Software Overview
 
@@ -108,8 +104,6 @@ There is no guarantee of success, therefore you are expected to find extra resou
 
 [Back to Contents Page](#Contents)
 
-<br>
-
 #### Features
 
 ##### Base System
@@ -125,6 +119,7 @@ There is no guarantee of success, therefore you are expected to find extra resou
 | iTunes Video Playback      | ✅      | `WhateverGreen.kext`, Apple ID (*Optional*)       | -                                                            |
 | Filesystem (APFS/HFS+)     | ✅      | Use SATA M.2. SSD or a Compatiable M.2. PCIe SSD  | No NVMe Power Management                                     |
 
+<hr>
 
 ##### Connectivity
 
@@ -136,6 +131,8 @@ There is no guarantee of success, therefore you are expected to find extra resou
 | Thunderbolt 3 Dock (Port Replicator) | ✅      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | -                                                            |
 | Thunderbolt 3 Hotplug                | ✅      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | -                                                            |
 | ThinkPad TB3 Dock Ethernet           | ✅      | ThinkPad Thunderbolt 3 Dock (40AC), `AppleRTL815XComposite109.kext`, `AppleRTL815XEthernet109.kext` | [Item page](https://support.lenovo.com/au/en/solutions/acc100356) |
+
+<hr>
 
 ##### Networking
 
@@ -149,6 +146,8 @@ There is no guarantee of success, therefore you are expected to find extra resou
 | Wi-Fi                  | ✅      | Swapping Intel WLAN card with  Dell DW1560, `AirportBrcmFixup.kext`, `Lilu.kext` | -                                       |
 | Sierra Wireless EM7455 | ❌      | `Legacy_Sierra_QMI.kext`                                     | No internet                             |
 
+<hr>
+
 ##### Human Interface Devices
 
 | Feature           | Status | Dependency                         | Remarks |
@@ -156,6 +155,8 @@ There is no guarantee of success, therefore you are expected to find extra resou
 | TrackPoint        | ✅      | Patched `VoodooPS2Controller.kext` | -       |
 | TrackPad          | ✅      | `VoodooPS2Controller.kext`         | -       |
 | Built-in Keyboard | ✅      | `VoodooPS2Controller.kext`         | -       |
+
+<hr>
 
 ##### Power Management
 
@@ -168,6 +169,8 @@ There is no guarantee of success, therefore you are expected to find extra resou
 | Hibernation                       | ❌      | -                                                            | Disabled                                                     |
 | Sleep                             | ❌      | -                                                            | Disabled                                                     |
 
+<hr>
+
 ##### Audio and Graphics
 
 | Feature                           | Status | Dependency                                                   | Remarks                                     |
@@ -177,10 +180,9 @@ There is no guarantee of success, therefore you are expected to find extra resou
 | Full Graphics Accleration (QE/CI) | ✅      | `WhateverGreen.kext`, Custom device properties in `config.plist` | -                                           |
 | HiDPI *(Optional)*                | ⚠️      | Shell Script from xzhih [Click Here](https://github.com/xzhih/one-key-hidpi) | May have werid scaling issues after wake up |
 
-
 [Back to Contents Page](#Contents)
 
-<br>
+<hr>
 
 ### General installation procedure
 
@@ -188,8 +190,10 @@ There is no guarantee of success, therefore you are expected to find extra resou
 
 ![flowchart](./README.assets/flowchart.svg)
 
+<hr>
+#### Step by Step Procedure
 
-#### STEP 1: Create Installation Media
+##### STEP 1: Create Installation Media
 
 ##### Checklist
 
@@ -340,34 +344,164 @@ There is no guarantee of success, therefore you are expected to find extra resou
 [Back to Contents Page](#Contents)
 
 <hr>
+### Fine-tuning your "MacBook"
 
-### More to know
-
-- **DSDT Patching guide**
-  - Follow guide here: [Link to Tonymacx86](https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/)
-  - Patch files: [Link to tylerngyuen's Github repo](https://github.com/tylernguyen/x1c6-hackintosh)
 - **iMessage Guide**
-  - Follow gudie here: [Link to Tonymacx86](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/)
+  
+  - iMessage Guide: [Link to Tonymacx86](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/)
+  
 - **Battery life improvement**
-  - Follow guide here to enable native CPU/ GPU Power Management: [Link to Tonymacx86](https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/)
-    - The CPU / GPU Power management is archieved by `CPUFriend.kext` and `CPUFriendDataProvider.kext` in my setup.
+  
+  - Basic concepts of Laptop CPU/GPU Power Management
+    - Link Here: [Tonymacx86](https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/)
+  - 
   - Do not use NVMe (PCIe) SSD for Hackintosh if you care about battery life
+  
 - **ThinkPad Thunderbolt 3 Dock (Type 40AC) Tweaks**
-  - Download the requried software for working Ethernet
-    - Link here: [Click me](https://gist.github.com/MadLittleMods/3005bb13f7e7178e1eaa9f054cc547b0)
+  
+  - Ethernet drivers for Ethernet on 40AC Dock
+    - Link here: [Github Gist](https://gist.github.com/MadLittleMods/3005bb13f7e7178e1eaa9f054cc547b0)
+  
 - **Thunderbolt Tweaks**
+	
 	- Principles and patching guide
-		- Link here: [Click me](https://osy.gitbook.io/hac-mini-guide/details/thunderbolt-3-fix)
-	- SSDT
-		- Link here: [Click me](https://www.tonymacx86.com/threads/in-progress-ssdt-for-thunderbolt-3-hotplug.248784/)
+		- Link here: [OSY Gitbook](https://osy.gitbook.io/hac-mini-guide/details/thunderbolt-3-fix)
+	- Thunderbolt 3 SSDT
+		- Link here: [Tonymacx86](https://www.tonymacx86.com/threads/in-progress-ssdt-for-thunderbolt-3-hotplug.248784/)
 	- IOElectrify for hot plugging support
-		- Link here: [Click me](https://github.com/the-darkvoid/macOS-IOElectrify)
+		- Link here: [macOS-IOElectrify](https://github.com/the-darkvoid/macOS-IOElectrify)
+	
+- **Configuring EC and USB Power**
+
+  1. Create USB Map, test EC configuration
+     1. Link to the guide here: [USBMap](https://github.com/corpnewt/USBMap)
+
+- **Graphics fix on macOS**
+
+  1. Know your hardware, the following configuration is tested for the following CPUs only
+
+     1. Intel Core i7-8650U *(Intel UHD 620)*
+     2. Intel Core i7-8550U *(Intel UHD 620)*
+
+  2. Use [WhateverGreen](#https://github.com/acidanthera/AppleALC)
+
+  3. In Config.plist/DeviceProperties/Add/PciRoot(0x0)/Pci(0x2,0x0), add the following
+
+     | Key                        | Type | Value      |
+     | -------------------------- | ---- | ---------- |
+     | `AAPL,GfxYTile`            | Data | `01000000` |
+     | `AAPL,ig-platform-id`      | Data | `04002759` |
+     | `device-id`                | Data | `16590000` |
+     | `framebuffer-con1-enable`  | Data | `01000000` |
+     | `framebuffer-con1-type`    | Data | `00080000` |
+     | `framebuffer-fbmem`        | Data | `00009000` |
+     | `framebuffer-patch-enable` | Data | `01000000` |
+     | `framebuffer-stolenmem`    | Data | `00003001` |
+
+  4. Result (Xcode as plist editor)![igfx-fix](/Users/xko/Documents/GitHub/macOS-ThinkPad-X1C6/README.assets/igfx-fix.png)
+
+  5. Reboot
+
+- **USB SD Card Reader patch**
+
+  - Dependency
+
+    1. Configuring EC and USBX Power
+    2. All USB ports injected
+
+  - Original Guide for the [patch](https://noobsplanet.com/index.php?threads/fix-internal-external-card-reader-hackintosh-guide.32/)
+
+  - Gather Information
+
+    1. Open System Report in About this Mac![about-this-mac](/Users/xko/Documents/GitHub/macOS-ThinkPad-X1C6/README.assets/about-this-mac.png)
+
+    2. Go to Hardware/USB/USB3.0-CRW![usb-card-info-list](/Users/xko/Documents/GitHub/macOS-ThinkPad-X1C6/README.assets/usb-card-info-list.png)
+
+    3. Pay attention to Product ID and Vendor ID, convert them to decimal
+
+       | Item       | Value (Hex) | Value (Dec) |
+       | ---------- | ----------- | ----------- |
+       | Product ID | 0x0328      | 808         |
+       | Vendor ID  | 0x0bda      | 3034        |
+
+    4. Update `idVendor` and `idProduct` in `Apple_internal_SD_Card_Reader_1_00` and `Apple_internal_SD_Card_Reader_2_00` dictionary found in `/System/Library/Extensions/AppleStorageDrivers.kext/Contents/PlugIns/AppleUSBCardReader.kext/Contents/Info.plist`.
+
+       1. Before ![before-change-usbcr](/Users/xko/Documents/GitHub/macOS-ThinkPad-X1C6/README.assets/before-change-usbcr.png)
+       2. After![affter-chagne-cr](/Users/xko/Documents/GitHub/macOS-ThinkPad-X1C6/README.assets/affter-chagne-cr.png)
+
+    5. Update `Physical Interconnect Location` field from `Internal` to `External` in `Apple_internal_SD_Card_Reader_1_00` and `Apple_internal_SD_Card_Reader_2_00` dictionary found in `/System/Library/Extensions/AppleStorageDrivers.kext/Contents/PlugIns/AppleUSBCardReader.kext/Contents/Info.plist`.![after-change-to-external-usbcr](/Users/xko/Documents/GitHub/macOS-ThinkPad-X1C6/README.assets/after-change-to-external-usbcr.png)
+
+    6. Run the following in terminal
+
+       ```shell
+       sudo kextcache -v -i /
+       ```
+
+    7. Reboot
+
 - **If you have other other suggestions**
+  
   - Talk on Github
 
 [Back to Contents Page](#Contents)
 
+### List of kexts and their purposes
+
+/L/E stands for /Library/Extensions
+EFI stands for EFI/OC/Kexts and an entry in Config.plist/Kernel/Add
+/L/E or EFI stands for those kexts can be installed in either location
+
+| Kext name                  | Purpose                                             | Arguments                                                    | Location    |
+| -------------------------- | --------------------------------------------------- | ------------------------------------------------------------ | ----------- |
+| AirportBrcmFixup.kext      |                                                     |                                                              | /L/E        |
+| AppleALC.kext              | Enabling sound                                      | APPL,layout-id=11                                            | /L/E or EFI |
+| BT4LEContinuityFixup.kext  |                                                     |                                                              | /L/E        |
+| BrcmBluetoothInjector.kext | Enabling bluetooth                                  | -                                                            | EFI         |
+| BrcmFirmwareData.kext      | Enabling bluetooth                                  | -                                                            | EFI         |
+| BrcmPatchRAM3.kext         | Enabling bluetooth                                  | -                                                            | EFI         |
+| CPUFriend.kext             | CPU Power Management                                | -                                                            | /L/E or EFI |
+| CPUFriendDataProvider.kext | Customize CPU Power Management  Scheme              | Configured by: [one-key-cpufriend](https://github.com/stevezhengshiqi/one-key-cpufriend) | /L/E or EFI |
+| HibernationFixup.kext      | Eliminate sleep wake issues                         | -                                                            | /L/E        |
+| IntelMausiEthernet.kext    | Enabling PCI Ethernet                               | -                                                            | /L/E or EFI |
+| IOElectrify.kext           | Enabling thunderbolt 3 Hotplug                      | -                                                            | /L/E or EFI |
+| Lilu.kext                  | Kext patcher                                        | Lilu plugins                                                 | /L/E or EFI |
+| NoTouchID.kext             | Prevent password prompt delays                      | -                                                            | /L/E        |
+| SMCBatteryManager.kext     | SMC Emulation                                       | -                                                            | /L/E or EFI |
+| SMCLightSensor.kext        | SMC Emulation                                       | -                                                            | /L/E or EFI |
+| SMCProcessor.kext          | SMC Emulation                                       | -                                                            | /L/E or EFI |
+| SMCSuperIO.kext            | SMC Emulation                                       | -                                                            | /L/E or EFI |
+| Thunderbolt3Unblocker.kext | Allow all thunderbolt 3 devices to be used          | -                                                            | /L/E        |
+| USBInjectAll.kext          | Inject all usuable USB ports on macOS               | SSDT-UIAC.aml                                                | /L/E or EFI |
+| USBMap.kext                |                                                     | Configured by: [USBMap](https://github.com/corpnewt/USBMap)  | /L/E or EFI |
+| VirtualSMC.kext            | SMC Emulation                                       | -                                                            | /L/E or EFI |
+| VoodooInput.kext           | TrackPad gesture recognization                      | -                                                            | /L/E or EFI |
+| VoodooPS2Controller.kext   | Enabling Built-in Keyboard, TrackPoint and TrackPad | -                                                            | /L/E or EFI |
+| WhateverGreen.kext         | Fixes Graphics problems in macOS                    | Device properties in Config.plist                            | /L/E or EFI |
+
 <br>
+
+### List of SSDTs and their purposes
+
+| SSDT                          | Purpose                                                     |
+| ----------------------------- | ----------------------------------------------------------- |
+| SSDT-ALS0.aml                 | Creates emulated light sensor to save Backlight information |
+| SSDT-BATT.aml                 | Enable battery percentage indication                        |
+| SSDT-DMAC.aml                 | Expose DMA Controller on macOS (More like real Mac)         |
+| SSDT-EC.aml                   | Configures Embedded Controller, related to USB power        |
+| SSDT-EXT3-LedReset-TP.aml     | -                                                           |
+| SSDT-EXT4-WakeScreen.aml      | -                                                           |
+| SSDT-HPET.aml                 | Fixes HPET on macOS                                         |
+| SSDT-Keyboard-X1C6.aml        | Configures Keyboard mapping on macOS                        |
+| SSDT-MCHC.aml                 | Expose Memory Controller on macOS (More like real Mac)      |
+| SSDT-PLUGIN_TYPE.aml          | Enables XNU CPU Power Management and HWP                    |
+| SSDT-PNLF.aml                 | Enables brightness adjustment                               |
+| SSDT-PTSWAK.aml               | Fixes Sleep, wake issues                                    |
+| SSDT-SBUS.aml                 | Allow correct identification of SMBus on macOS              |
+| SSDT-TB3.aml                  | Enable Thunderbolt 3 functionality and hot-plug support     |
+| SSDT-UIAC.aml                 | Unblock all USB ports                                       |
+| SSDT-USBX.aml                 | Configures USB Power                                        |
+| SSDT-X1-Carbon-Trackpoint.aml | Configures TrackPoint speed                                 |
+
 
 
 ### Useful utilities
@@ -375,7 +509,6 @@ There is no guarantee of success, therefore you are expected to find extra resou
 - [Hackintool](https://www.tonymacx86.com/threads/release-hackintool-v2-8-0.254559/)
 - [Kext Updater](https://www.insanelymac.com/forum/topic/334222-kext-updater-keep-your-kexts-fresh-with-only-one-click/)
 - [Kext Beast](https://www.tonymacx86.com/resources/kextbeast-2-0-2.399/)
-- [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
 - [MaciASL](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/)
 
 [Back to Contents Page](#Contents)
@@ -387,6 +520,7 @@ There is no guarantee of success, therefore you are expected to find extra resou
 
 - Rehabman for most of the resources and guides
 - Tonymacx86 as a discussion platform and hosts most resources
+- acidanthera for OpenCore bootloader, Link: [OpenCorePkg](#https://github.com/acidanthera/OpenCorePkg)
 - P1LGRIM an iDiot's guide for iMessage, Link: [iDiot's guide for iMessage](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/)
 - tylerngyuen for ACPI patch files, Link: [tylernguyen](https://github.com/tylernguyen)/[x1c6-hackintosh](https://github.com/tylernguyen/x1c6-hackintosh)
 - LeleTuratti for Thunderbolt 3 SSDT, Link: [[In progress] SSDT for Thunderbolt 3 Hotplug](https://www.tonymacx86.com/threads/in-progress-ssdt-for-thunderbolt-3-hotplug.248784/)
@@ -405,11 +539,11 @@ There is no guarantee of success, therefore you are expected to find extra resou
 - MacMan for Kext Beast, Link: [Kext Beast](https://www.tonymacx86.com/resources/kextbeast-2-0-2.399/)
 - Mackie100 for Clover Configurator, Link: [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
 - notthebee for macOS USB Creator, Link: [macos_usb](https://github.com/notthebee/macos_usb)
+- corpnewt for USBMap script , Link: [corpnewt/USBMap](https://github.com/corpnewt/USBMap)
 - All contributors in the hackintosh community
 
 [Back to Contents Page](#Contents)
 
 <br>
 
-Last update: 2020-01-10
-
+Last update: 2020-01-11 (Taipei Time)
