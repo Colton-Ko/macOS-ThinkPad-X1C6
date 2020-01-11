@@ -1,6 +1,14 @@
-# macOS-ThinkPad-X1C6 🍀
+# macOS-ThinkPad-X1C6 (OpenCore)
 
 ###### US English, [中文版請見此](./README-TW.md)
+
+### Notice
+
+The README.md guide for OpenCore is being worked on. It will be published once the README.md for OpenCore is ready.
+
+<br>
+
+## CLOVER
 
 ### Introduction
 
