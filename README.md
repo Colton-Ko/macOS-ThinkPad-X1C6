@@ -448,8 +448,11 @@ There is no guarantee of success, therefore you are expected to find extra resou
 ### List of kexts and their purposes
 
 /L/E stands for /Library/Extensions
+
 EFI stands for EFI/OC/Kexts and an entry in Config.plist/Kernel/Add
+
 /L/E or EFI stands for those kexts can be installed in either location
+
 
 | Kext name                  | Purpose                                             | Arguments                                                    | Location    |
 | -------------------------- | --------------------------------------------------- | ------------------------------------------------------------ | ----------- |
