@@ -975,10 +975,14 @@
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 				<key>layout-id</key>
 				<data>
 				CwAAAA==
 				</data>
+				<key>no-controller-patch</key>
+				<integer>1</integer>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x6)</key>
 			<dict>
@@ -989,23 +993,79 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
-				<key>AAPL,GfxYTile</key>
-				<data>
-				AQAAAA==
-				</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>
 				BAAnWQ==
 				</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal</string>
 				<key>device-id</key>
 				<data>
 				FlkAAA==
+				</data>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
+				<key>enable-hdmi20</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con0-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con0-pipe</key>
+				<data>
+				EgAAAA==
+				</data>
+				<key>framebuffer-con0-type</key>
+				<data>
+				AAQAAA==
 				</data>
 				<key>framebuffer-con1-enable</key>
 				<data>
 				AQAAAA==
 				</data>
+				<key>framebuffer-con1-flags</key>
+				<data>
+				hwEAAA==
+				</data>
+				<key>framebuffer-con1-pipe</key>
+				<data>
+				EgAAAA==
+				</data>
 				<key>framebuffer-con1-type</key>
+				<data>
+				AAgAAA==
+				</data>
+				<key>framebuffer-con2-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con2-flags</key>
+				<data>
+				hwEAAA==
+				</data>
+				<key>framebuffer-con2-pipe</key>
+				<data>
+				EgAAAA==
+				</data>
+				<key>framebuffer-con2-type</key>
+				<data>
+				AAgAAA==
+				</data>
+				<key>framebuffer-con3-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con3-flags</key>
+				<data>
+				hwEAAA==
+				</data>
+				<key>framebuffer-con3-pipe</key>
+				<data>
+				EgAAAA==
+				</data>
+				<key>framebuffer-con3-type</key>
 				<data>
 				AAgAAA==
 				</data>
@@ -1014,13 +1074,13 @@
 				AACQAA==
 				</data>
 				<key>framebuffer-patch-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<integer>1</integer>
 				<key>framebuffer-stolenmem</key>
 				<data>
 				AAAwAQ==
 				</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 			</dict>
 		</dict>
 		<key>Block</key>
