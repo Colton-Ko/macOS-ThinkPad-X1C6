@@ -344,6 +344,7 @@ There is no guarantee of success, therefore you are expected to find extra resou
 [Back to Contents Page](#Contents)
 
 <hr>
+
 ### Fine-tuning your "MacBook"
 
 
