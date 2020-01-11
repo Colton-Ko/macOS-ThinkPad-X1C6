@@ -1,33 +1,38 @@
 # macOS-ThinkPad-X1C6 🍀
 
-###### US English, [中文版請見此](./README-TW.md)
+###### 臺灣中文， [Click here for an English guide](./README.md)
 
-### Introduction
+### 介紹
 
-This repository provides some necessary resources to install a copy of macOS on ThinkPad X1 Carbon 6th.
-There is no guarantee of success, therefore you are expected to find extra resources to meet your needs, and be responsible for any consequences. **For Machine Type 20KH Only**.
-
-<br>
-
-
-### Objective
-
-- Gather resources for a successful macOS installation on ThinkPad X1 Carbon 6th
-- To prevent myself from forgetting how to instal macOS on ThinkPad X1 Carbon 6th
-- To share the resources for others who might want to do the same thing
-- To keep the last-known-good clover configuration
+這數據庫提供於 第六代 ThinkPad X1 Carbon 筆記型電腦安裝 macOS 的資源。由於這些資源並不能保證安裝一定成功，所以如果遇到問題時，請用戶自行於網路上尋找有關資源解決相關問題。安裝 macOS 具有一定風險，請用戶先行備份資料，本人將不會對 參考 本數據庫的任何資源後 而引致的任何後果負責。**只適用於 20KH 機型。**
 
 <br>
 
 
-### Contents
+### 目標
 
-1. [Hardware Specifications](#Hardware-Specifications)
-2. [UEFI Setup Configuration](#UEFI-Setup-Configuration)
-3. [Software Overview](#Software-Overview)
-   1. [Guide Compatibility](#Compatibility)
-   2. [Features](#Features)
-4. [General installation procedure](#General-installation-procedure)
+- 收集資源以便安裝 macOS 於 第六代 ThinkPad X1 Carbon 上
+- 避免我忘記如何在 第六代 ThinkPad X1 Carbon上 安裝 macOS
+- 分享資源以便其他用戶也能安裝
+- 備份 Clover 開機載入器的設定
+
+<br>
+
+
+### 目錄
+
+1. [硬體規格](#硬體規格)
+2. [UEFI 韌體設定](#UEFI-韌體設定)
+3. [軟體概觀](#軟體概觀)
+   1. [相容性](#相容性)
+   2. [軟體功能](#軟體功能)
+      1. [基本系統功能](#基本系統功能)
+      2. [連接端口](#連接端口)
+      3. [網絡功能](#網絡功能)
+      4. [輸入裝置](#輸入裝置)
+      5. [電源管理](#電源管理)
+      6. [繪圖及音效](#繪圖及音效)
+4. [安裝步驟](#安裝步驟)
 5. [More to know](#More-to-know)
 6. [Useful utilities](#Useful-utilities)
 7. [Credits](#Credits)
@@ -35,57 +40,57 @@ There is no guarantee of success, therefore you are expected to find extra resou
 <br>
 
 
-### Hardware Specifications
+### 硬體規格
 
-**This is the hardware specification of my ThinkPad X1 Carbon 6th.**
+###### **以下是我的 第六代 ThinkPad X1 Carbon 所搭載的硬體規格**
 
-| Item                        | Description                                                 |
+| 元件                        | 型號                                                 |
 | --------------------------- | ----------------------------------------------------------- |
-| Processor                   | Intel Core i7-8550U                                         |
-| Graphics                    | Intel UHD Graphics 620                                      |
-| Memory                      | Onboard 16GB LPDDR3 2133MHz                                 |
-| Audio Codec                 | Realtek ALC 285 (ALC3286)                                   |
-| WWAN                        | Sierra Wireless EM7455 (Qualcomm Snapdragon X7 LTE-A Modem) |
-| PCI Ethernet                | Intel I219V4 PCI Express Gigabit Ethernet                   |
-| WLAN/ Bluetooth Module      | Dell DW1560                                                 |
-| Bluetooth                   | BCM20702A0                                                  |
-| Wi-Fi                       | Broadcom BCM94352Z                                          |
-| Media Card Reader           | Realtek USB3.0 Card Reader                                  |
-| Built-in Display Resolution | 2560x1440 (2K)                                              |
-| UEFI Firmware Version       | 1.43 (N23ET68W)                                             |
-| Storage                     | Samsung 860 EVO M.2. SATA 6Gb/s SSD                         |
-| Thunderbolt Controller      | Intel Alpine Ridge DSL6540 Thunderbolt 3 NHI                |
+| 處理器                   | Intel Core i7-8550U                                         |
+| 圖形處理器                    | Intel UHD Graphics 620                                      |
+| 記憶體                     | Onboard 16GB LPDDR3 2133MHz                                 |
+| 音訊 編解碼器                 | Realtek ALC 285 (ALC3286)                                   |
+| 無線廣域網路卡 (WWAN)                        | Sierra Wireless EM7455 (Qualcomm Snapdragon X7 LTE-A Modem) |
+| 乙太網路卡 (Ethernet)                | Intel I219V4 PCI Express Gigabit Ethernet                   |
+| 無線區域網路-藍芽卡 (Wi-Fi) | Dell DW1560                                                 |
+| 藍芽                 | BCM20702A0                                                  |
+| 無線區域網路裝置               | Broadcom BCM94352Z                                          |
+| SD 讀卡器           | Realtek USB3.0 Card Reader                                  |
+| 內建螢幕解析度 | 2560x1440 (2K)                                              |
+| UEFI 韌體版本       | 1.43 (N23ET68W)                                             |
+| 儲存裝置                     | Samsung 860 EVO M.2. SATA 6Gb/s SSD                         |
+| Thunderbolt 控制器      | Intel Alpine Ridge DSL6540 Thunderbolt 3 NHI                |
 
-[Back to Contents Page](#Contents)
+[返回目錄](#目錄)
 
 <br>
 
 
-### UEFI Setup Configuration
+### UEFI 韌體設定
 
-**Only listing values that matters. Feel free to configure other values to suit your needs.**
+###### 以下只會列出關鍵設定值，您可以隨意更改UEFI 韌體中的其他設定
 
-| Path                                                         | Value        | Remarks                                                      |
+| 路徑                                                         | 建議值        | 註解                                                      |
 | ------------------------------------------------------------ | ------------ | ------------------------------------------------------------ |
-| Config/Network/Wake On LAN                                   | Disabled     | Only 100M Ethernet if enabled                                |
-| Config/USB/USB UEFI BIOS Support                             | Enabled      | Enable UEFI USB boot                                         |
+| Config/Network/Wake On LAN                                   | Disabled     | 如果啟用將限制乙太網路速度至最高100Mbps                                |
+| Config/USB/USB UEFI BIOS Support                             | Enabled      | 啟用 UEFI USB 開機功能                                         |
 | Config/Power/8254 Timer Clock Gating                         | Auto         | -                                                            |
 | Config/Power/Sleep State                                     | Linux        | -                                                            |
-| Config/Thunderbolt (TM) 3/Thunderbolt Security Level         | No Security  | No Thunderbolt 3 if enabled                                  |
-| Config/Thunderbolt (TM) 3/Thunderbolt 3 BIOS Assistant       | Disabled     | No Thunderbolt 3 if enabled                                  |
-| Config/Thunderbolt (TM) 3/Support in Pre Boot Environment: Thunderbolt (TM) device | Pre-boot ACL | No Front Thunderbolt 3 (Type-C port) if changed to other values |
+| Config/Thunderbolt (TM) 3/Thunderbolt Security Level         | No Security  | 如果啟用將無法於 macOS 使用 Thunderbolt 3                                  |
+| Config/Thunderbolt (TM) 3/Thunderbolt 3 BIOS Assistant       | Disabled     | 如果啟用將無法於 macOS 使用 Thunderbolt 3                                  |
+| Config/Thunderbolt (TM) 3/Support in Pre Boot Environment: Thunderbolt (TM) device | Pre-boot ACL | 如果設置為其他值將無法使用前端 Thuderbolt 3 端口 |
 | Security/Intel (R) SGX/ Intel (R) SGX Control                | Disabled     | -                                                            |
-| Security/Secure Boot Configuration/SecureBoot                | Disabled     | Unable to boot macOS if enabled (Requires digitally signed executables) |
+| Security/Secure Boot Configuration/SecureBoot                | Disabled     | 如果啟用將無法以 macOS 開機（啟用後執行檔需要經數字簽注後始可執行） |
 | Security/Device Guard/Device Guard                           | Disabled     | -                                                            |
 
-[Back to Contents Page](#Contents)
+[返回目錄](#目錄)
 
 <br>
 
 
-### Software Overview
+### 軟體概觀
 
-#### Compatibility
+#### 相容性
 
 - macOS Mojave
 	- 10.14.6
@@ -98,85 +103,82 @@ There is no guarantee of success, therefore you are expected to find extra resou
 	- 10.15.2
 		- 2019-12-18
 
-[Back to Contents Page](#Contents)
+[返回目錄](#目錄)
 
 <br>
 
-#### Features
+#### 軟體功能
 
-##### Base System
+##### 基本系統功能
 
-| Feature                    | Status | Dependency                                        | Remarks                                                      |
-| :------------------------- | ------ | ------------------------------------------------- | ------------------------------------------------------------ |
-| macOS (10.14.x or 10.15.x) | ✅      | `VirtualSMC.kext`, `Lilu.kext`, Clover Bootloader | Clover v2.5k R5100                                           |
-| iMessage/ FaceTime         | ✅      | Apple ID, Valid SMBIOS                            | [Guide](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/) |
-| App Store                  | ✅      | Apple ID                                          | -                                                            |
-| iMessage/ FaceTime         | ✅      | Apple ID, Valid SMBIOS                            | [Guide](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/) |
-| iCloud                     | ✅      | Apple ID                                          | -                                                            |
-| Siri                       | ✅      | Apple ID, Working audio recorder                  | Needs `AppleALC.kext`                                        |
-| iTunes Video Playback      | ✅      | `WhateverGreen.kext`, Apple ID (*Optional*)       | -                                                            |
-| Filesystem (APFS/HFS+)     | ✅      | Use SATA M.2. SSD or a Compatiable M.2. PCIe SSD  | No NVMe Power Management                                     |
+| 功能                       | 狀態 | 相依性                                           | 註解                                                         |
+| :------------------------- | ---- | ------------------------------------------------ | ------------------------------------------------------------ |
+| macOS (10.14.x 或 10.15.x) | ✅    | `VirtualSMC.kext`, `Lilu.kext`,Clover Bootloader | Clover v2.5k R5100                                           |
+| iMessage/ FaceTime         | ✅    | Apple 帳戶, 有效的 SMBIOS                        | [SMBIOS 說明](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/) |
+| App Store                  | ✅    | Apple 帳戶                                       | -                                                            |
+| iCloud                     | ✅    | Apple 帳戶                                       | -                                                            |
+| Siri                       | ✅    | Apple 帳戶, 正常運作的麥克風                     | `AppleALC.kext`                                              |
+| iTunes 影片播放            | ✅    | `WhateverGreen.kext`, Apple ID (*視乎情況*)      | -                                                            |
+| 檔案系統 (APFS/HFS+)       | ✅    | SATA M.2. 固態硬碟或相容的 M.2. PCIe 固態硬碟    | 對 NVMe 沒有 電源管理                                        |
 
+##### 連接端口
 
-##### Connectivity
-
-| Feature                              | Status | Dependency                                                   | Remarks                                                      |
-| :----------------------------------- | ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Micro SD Card Reader                 | ✅      | Patched `AppleUSBCardReader.kext`                            | -                                                            |
+| 功能 | 狀態 | 相依性 | 註解 |
+| :--- | ---- | ------ | ---- |
+| Micro SD 讀卡器                 | ✅      | 修改後的 `AppleUSBCardReader.kext`                            | -                                                            |
 | USB 3.1                              | ✅      | `USBInjectAll.kext` , `SSDT-UAIC.aml`                        | -                                                            |
-| DisplayPort on Thunderbolt 3 Dock    | ✅      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | -                                                            |
-| Thunderbolt 3 Dock (Port Replicator) | ✅      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | -                                                            |
-| Thunderbolt 3 Hotplug                | ✅      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | -                                                            |
-| ThinkPad TB3 Dock Ethernet           | ✅      | ThinkPad Thunderbolt 3 Dock (40AC), `AppleRTL815XComposite109.kext`, `AppleRTL815XEthernet109.kext` | [Item page](https://support.lenovo.com/au/en/solutions/acc100356) |
+| Thunderbolt 3 擴充埠的 DisplayPort   | ✅      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | -                                                            |
+| Thunderbolt 3 擴充埠 | ✅      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | -                                                            |
+| Thunderbolt 3 熱插拔                | ✅      | `SSDT-TB3.aml`, `IOElectrify.kext`                           | -                                                            |
+| Thunderbolt 3 擴充埠的 乙太網路端口           | ✅      | Thunderbolt 3 擴充埠 (40AC型號), `AppleRTL815XComposite109.kext`, `AppleRTL815XEthernet109.kext` | [產品介紹](https://support.lenovo.com/au/zh/solutions/acc100356) |
 
-##### Networking
+##### 網絡功能
 
-| Feature                | Status | Dependency                                                   | Remarks                                 |
-| :--------------------- | ------ | ------------------------------------------------------------ | --------------------------------------- |
-| AirDrop                | ✅      | `BT4LEContiunityFixup.kext`, Working Blutetooth and WiFi setup | -                                       |
-| Bluetooth              | ✅      | `BrcmFirmwareRepo.kext`, `BrcmPatchRAM3.kext`, `BrcmBluetoothInjector.kext` | -                                       |
-| Continuty              | ✅      | `BT4LEContiunityFixup.kext`, Working Blutetooth and WiFi setup | -                                       |
-| Sidecar                | ✅      | iPad with iPadOS 13                                          | Tested with iPad Pro with iPadOS 13.1.2 |
-| PCIe Ethernet          | ✅      | `IntelMausiEthernet.kext`                                    | -                                       |
-| Wi-Fi                  | ✅      | Swapping Intel WLAN card with  Dell DW1560, `AirportBrcmFixup.kext`, `Lilu.kext` | -                                       |
-| Sierra Wireless EM7455 | ❌      | `Legacy_Sierra_QMI.kext`                                     | No internet                             |
+| 功能                   | 狀態 | 相依性                                                       | 註解                                                    |
+| :--------------------- | ---- | ------------------------------------------------------------ | ------------------------------------------------------- |
+| AirDrop                | ✅    | `BT4LEContiunityFixup.kext`, 正常運作的藍芽和無線區域網路功能 | -                                                       |
+| 藍芽                   | ✅    | `BrcmFirmwareRepo.kext`, `BrcmPatchRAM3.kext`, `BrcmBluetoothInjector.kext` | -                                                       |
+| 接續互通 (Continuty)   | ✅    | `BT4LEContiunityFixup.kext`, 正常運作的藍芽和無線區域網路功能 | -                                                       |
+| 延伸桌面(Sidecar)      | ✅    | 已安裝iPadOS 13 的 iPad                                      | 於安裝了 iPad OS 13 的 iPad Pro 10.5 上測試過，正常運作 |
+| 乙太網路               | ✅    | `IntelMausiEthernet.kext`                                    | -                                                       |
+| Wi-Fi                  | ✅    | 把 原廠的無線區域網路 換成 Dell DW1560                       | -                                                       |
+| Sierra Wireless EM7455 | ❌    | `Legacy_Sierra_QMI.kext`                                     | 沒有無線廣域網路                                        |
 
-##### Human Interface Devices
+##### 輸入裝置
 
-| Feature           | Status | Dependency                         | Remarks |
-| :---------------- | ------ | ---------------------------------- | ------- |
-| TrackPoint        | ✅      | Patched `VoodooPS2Controller.kext` | -       |
-| TrackPad          | ✅      | `VoodooPS2Controller.kext`         | -       |
-| Built-in Keyboard | ✅      | `VoodooPS2Controller.kext`         | -       |
+| 功能 | 狀態 | 相依性 | 註解 |
+| :--- | ---- | ------ | ---- |
+| 小紅帽 (指點杆) | ✅      | `VoodooPS2Controller.kext`                           | -                                                            |
+| 觸控板                             | ✅      | `VoodooPS2Controller.kext`                                   | -                                                            |
+| 內建鍵盤                    | ✅      | `VoodooPS2Controller.kext`                                   | -                                                            |
 
-##### Power Management
+##### 電源管理
 
-| Feature                           | Status | Dependency                                                   | Remarks                                                      |
-| :-------------------------------- | ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Battery life                      | ✅      | Non-NVME SSD, proper power management setup (CPU Power Management, GPU Power Management) | Drops 10% per hour for light programming tasks               |
-| Battery Percentage Indication     | ✅      | Patched `DSDT.aml`                                           | Use [MaciASL](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/) |
-| CPU Power Management (SpeedShift) | ✅      | `XCPM`                                                       | -                                                            |
-| IGPU Power Management             | ✅      | `XCPM`                                                       | -                                                            |
-| Hibernation                       | ❌      | -                                                            | Disabled                                                     |
-| Sleep                             | ❌      | -                                                            | Disabled                                                     |
+| 功能 | 狀態 | 相依性 | 註解 |
+| :--- | ---- | ---- | ---- |
+| 續航力                        | ✅      | 非 NVMe 的固態硬碟, 正常運作的電源管理功能 (GPU/CPU) | 對輕度上網作業，約每小時下降10%               |
+| 電池容量百分比        | ✅      | 修改過的 `DSDT.aml`                                         | 使用 [MaciASL](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/) 修改ACPI表 |
+| 處理器 電源管理 (SpeedShift)    | ✅      | `XCPM`                                                       | -                                                            |
+| 內建繪圖處理器 電源管理              | ✅      | `XCPM`                                                       | -                                                            |
+| 睡眠                                | ❌      | -                                                            | 禁用                                                   |
+| 休眠                          | ❌      | -                                                            | 禁用                                                   |
 
-##### Audio and Graphics
+##### 繪圖及音效
 
-| Feature                           | Status | Dependency                                                   | Remarks                                     |
-| :-------------------------------- | ------ | ------------------------------------------------------------ | ------------------------------------------- |
-| Audio Recording                   | ✅      | `AppleALC.kext` with Layout ID = 11                          | -                                           |
-| Audio Playback                    | ✅      | `AppleALC.kext` with Layout ID = 11                          | -                                           |
-| Full Graphics Accleration (QE/CI) | ✅      | `WhateverGreen.kext`, Custom device properties in `config.plist` | -                                           |
-| HiDPI *(Optional)*                | ⚠️      | Shell Script from xzhih [Click Here](https://github.com/xzhih/one-key-hidpi) | May have werid scaling issues after wake up |
+| 功能                              | 狀態 | 相依性                                                   | 註解                                                      |
+| :----------------------------------- | ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 麥克風                      | ✅      | `AppleALC.kext` with Layout ID = 11                          | -                                                            |
+| 揚聲器                       | ✅      | `AppleALC.kext` 的 Layout ID = 11                          | -                                                            |
+| 繪圖加速 (QE/CI)  | ✅      | `WhateverGreen.kext`, 經`config.plist`自定義的裝置屬性 | -                                                            |
+| HiDPI *(非必須)* | ⚠️ | Shell Script from xzhih [Click Here](https://github.com/xzhih/one-key-hidpi) | 於睡眠後可能有奇怪的解析度問題 |
 
-
-[Back to Contents Page](#Contents)
+[返回目錄](#目錄)
 
 <br>
 
-### General installation procedure
+### 安裝步驟
 
-#### Flowchart
+#### 流程圖
 
 ![flowchart](./README.assets/flowchart.svg)
 
@@ -403,5 +405,5 @@ There is no guarantee of success, therefore you are expected to find extra resou
 
 <br>
 
-Last update: 2020-01-10
+Last update: 2020-01-05
 

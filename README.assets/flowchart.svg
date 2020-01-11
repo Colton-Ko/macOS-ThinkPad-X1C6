@@ -1,0 +1,498 @@
+<svg id="mermaid-1578205608593" width="1182.07421875" xmlns="http://www.w3.org/2000/svg" height="2602" viewBox="0 0 1182.07421875 2602"><style>
+
+
+
+#mermaid-1578205608593 .label {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  color: #333; }
+
+#mermaid-1578205608593 .label text {
+  fill: #333; }
+
+#mermaid-1578205608593 .node rect,
+#mermaid-1578205608593 .node circle,
+#mermaid-1578205608593 .node ellipse,
+#mermaid-1578205608593 .node polygon {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1px; }
+
+#mermaid-1578205608593 .node .label {
+  text-align: center; }
+
+#mermaid-1578205608593 .node.clickable {
+  cursor: pointer; }
+
+#mermaid-1578205608593 .arrowheadPath {
+  fill: #333333; }
+
+#mermaid-1578205608593 .edgePath .path {
+  stroke: #333333;
+  stroke-width: 1.5px; }
+
+#mermaid-1578205608593 .edgeLabel {
+  background-color: #e8e8e8;
+  text-align: center; }
+
+#mermaid-1578205608593 .cluster rect {
+  fill: #ffffde;
+  stroke: #aaaa33;
+  stroke-width: 1px; }
+
+#mermaid-1578205608593 .cluster text {
+  fill: #333; }
+
+#mermaid-1578205608593 div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 200px;
+  padding: 2px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 12px;
+  background: #ffffde;
+  border: 1px solid #aaaa33;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 100; }
+
+#mermaid-1578205608593 .actor {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1578205608593 text.actor {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1578205608593 .actor-line {
+  stroke: grey; }
+
+#mermaid-1578205608593 .messageLine0 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1578205608593 .messageLine1 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1578205608593 #arrowhead {
+  fill: #333; }
+
+#mermaid-1578205608593 .sequenceNumber {
+  fill: white; }
+
+#mermaid-1578205608593 #sequencenumber {
+  fill: #333; }
+
+#mermaid-1578205608593 #crosshead path {
+  fill: #333 !important;
+  stroke: #333 !important; }
+
+#mermaid-1578205608593 .messageText {
+  fill: #333;
+  stroke: none; }
+
+#mermaid-1578205608593 .labelBox {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1578205608593 .labelText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1578205608593 .loopText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1578205608593 .loopLine {
+  stroke-width: 2;
+  stroke-dasharray: '2 2';
+  stroke: #CCCCFF; }
+
+#mermaid-1578205608593 .note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+
+#mermaid-1578205608593 .noteText {
+  fill: black;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 14px; }
+
+#mermaid-1578205608593 .activation0 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1578205608593 .activation1 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1578205608593 .activation2 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+
+#mermaid-1578205608593 .mermaid-main-font {
+  font-family: "trebuchet ms", verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1578205608593 .section {
+  stroke: none;
+  opacity: 0.2; }
+
+#mermaid-1578205608593 .section0 {
+  fill: rgba(102, 102, 255, 0.49); }
+
+#mermaid-1578205608593 .section2 {
+  fill: #fff400; }
+
+#mermaid-1578205608593 .section1,
+#mermaid-1578205608593 .section3 {
+  fill: white;
+  opacity: 0.2; }
+
+#mermaid-1578205608593 .sectionTitle0 {
+  fill: #333; }
+
+#mermaid-1578205608593 .sectionTitle1 {
+  fill: #333; }
+
+#mermaid-1578205608593 .sectionTitle2 {
+  fill: #333; }
+
+#mermaid-1578205608593 .sectionTitle3 {
+  fill: #333; }
+
+#mermaid-1578205608593 .sectionTitle {
+  text-anchor: start;
+  font-size: 11px;
+  text-height: 14px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+
+#mermaid-1578205608593 .grid .tick {
+  stroke: lightgrey;
+  opacity: 0.3;
+  shape-rendering: crispEdges; }
+#mermaid-1578205608593   .grid .tick text {
+    font-family: 'trebuchet ms', verdana, arial;
+    font-family: var(--mermaid-font-family); }
+
+#mermaid-1578205608593 .grid path {
+  stroke-width: 0; }
+
+
+#mermaid-1578205608593 .today {
+  fill: none;
+  stroke: red;
+  stroke-width: 2px; }
+
+
+
+#mermaid-1578205608593 .task {
+  stroke-width: 2; }
+
+#mermaid-1578205608593 .taskText {
+  text-anchor: middle;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1578205608593 .taskText:not([font-size]) {
+  font-size: 11px; }
+
+#mermaid-1578205608593 .taskTextOutsideRight {
+  fill: black;
+  text-anchor: start;
+  font-size: 11px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1578205608593 .taskTextOutsideLeft {
+  fill: black;
+  text-anchor: end;
+  font-size: 11px; }
+
+
+#mermaid-1578205608593 .task.clickable {
+  cursor: pointer; }
+
+#mermaid-1578205608593 .taskText.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1578205608593 .taskTextOutsideLeft.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1578205608593 .taskTextOutsideRight.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+
+#mermaid-1578205608593 .taskText0,
+#mermaid-1578205608593 .taskText1,
+#mermaid-1578205608593 .taskText2,
+#mermaid-1578205608593 .taskText3 {
+  fill: white; }
+
+#mermaid-1578205608593 .task0,
+#mermaid-1578205608593 .task1,
+#mermaid-1578205608593 .task2,
+#mermaid-1578205608593 .task3 {
+  fill: #8a90dd;
+  stroke: #534fbc; }
+
+#mermaid-1578205608593 .taskTextOutside0,
+#mermaid-1578205608593 .taskTextOutside2 {
+  fill: black; }
+
+#mermaid-1578205608593 .taskTextOutside1,
+#mermaid-1578205608593 .taskTextOutside3 {
+  fill: black; }
+
+
+#mermaid-1578205608593 .active0,
+#mermaid-1578205608593 .active1,
+#mermaid-1578205608593 .active2,
+#mermaid-1578205608593 .active3 {
+  fill: #bfc7ff;
+  stroke: #534fbc; }
+
+#mermaid-1578205608593 .activeText0,
+#mermaid-1578205608593 .activeText1,
+#mermaid-1578205608593 .activeText2,
+#mermaid-1578205608593 .activeText3 {
+  fill: black !important; }
+
+
+#mermaid-1578205608593 .done0,
+#mermaid-1578205608593 .done1,
+#mermaid-1578205608593 .done2,
+#mermaid-1578205608593 .done3 {
+  stroke: grey;
+  fill: lightgrey;
+  stroke-width: 2; }
+
+#mermaid-1578205608593 .doneText0,
+#mermaid-1578205608593 .doneText1,
+#mermaid-1578205608593 .doneText2,
+#mermaid-1578205608593 .doneText3 {
+  fill: black !important; }
+
+
+#mermaid-1578205608593 .crit0,
+#mermaid-1578205608593 .crit1,
+#mermaid-1578205608593 .crit2,
+#mermaid-1578205608593 .crit3 {
+  stroke: #ff8888;
+  fill: red;
+  stroke-width: 2; }
+
+#mermaid-1578205608593 .activeCrit0,
+#mermaid-1578205608593 .activeCrit1,
+#mermaid-1578205608593 .activeCrit2,
+#mermaid-1578205608593 .activeCrit3 {
+  stroke: #ff8888;
+  fill: #bfc7ff;
+  stroke-width: 2; }
+
+#mermaid-1578205608593 .doneCrit0,
+#mermaid-1578205608593 .doneCrit1,
+#mermaid-1578205608593 .doneCrit2,
+#mermaid-1578205608593 .doneCrit3 {
+  stroke: #ff8888;
+  fill: lightgrey;
+  stroke-width: 2;
+  cursor: pointer;
+  shape-rendering: crispEdges; }
+
+#mermaid-1578205608593 .milestone {
+  transform: rotate(45deg) scale(0.8, 0.8); }
+
+#mermaid-1578205608593 .milestoneText {
+  font-style: italic; }
+
+#mermaid-1578205608593 .doneCritText0,
+#mermaid-1578205608593 .doneCritText1,
+#mermaid-1578205608593 .doneCritText2,
+#mermaid-1578205608593 .doneCritText3 {
+  fill: black !important; }
+
+#mermaid-1578205608593 .activeCritText0,
+#mermaid-1578205608593 .activeCritText1,
+#mermaid-1578205608593 .activeCritText2,
+#mermaid-1578205608593 .activeCritText3 {
+  fill: black !important; }
+
+#mermaid-1578205608593 .titleText {
+  text-anchor: middle;
+  font-size: 18px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1578205608593 g.classGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 10px; }
+#mermaid-1578205608593   g.classGroup text .title {
+    font-weight: bolder; }
+
+#mermaid-1578205608593 g.classGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1578205608593 g.classGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578205608593 .classLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1578205608593 .classLabel .label {
+  fill: #9370DB;
+  font-size: 10px; }
+
+#mermaid-1578205608593 .relation {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1578205608593 #compositionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578205608593 #compositionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578205608593 #aggregationStart {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578205608593 #aggregationEnd {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578205608593 #dependencyStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578205608593 #dependencyEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578205608593 #extensionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578205608593 #extensionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578205608593 .commit-id,
+#mermaid-1578205608593 .commit-msg,
+#mermaid-1578205608593 .branch-label {
+  fill: lightgrey;
+  color: lightgrey;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1578205608593 .pieTitleText {
+  text-anchor: middle;
+  font-size: 25px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1578205608593 .slice {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1578205608593 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1578205608593 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px; }
+
+#mermaid-1578205608593 g.stateGroup .state-title {
+  font-weight: bolder;
+  fill: black; }
+
+#mermaid-1578205608593 g.stateGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1578205608593 g.stateGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578205608593 .transition {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1578205608593 .stateGroup .composit {
+  fill: white;
+  border-bottom: 1px; }
+
+#mermaid-1578205608593 .stateGroup .alt-composit {
+  fill: #e0e0e0;
+  border-bottom: 1px; }
+
+#mermaid-1578205608593 .state-note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+#mermaid-1578205608593   .state-note text {
+    fill: black;
+    stroke: none;
+    font-size: 10px; }
+
+#mermaid-1578205608593 .stateLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1578205608593 .stateLabel text {
+  fill: black;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+:root {
+  --mermaid-font-family: '"trebuchet ms", verdana, arial';
+  --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive; }
+
+:root { --mermaid-font-family: "trebuchet ms", verdana, arial;}</style><style>#mermaid-1578205608593 {
+    color: rgb(0, 0, 0);
+    font: normal normal normal normal 16px/19px "trebuchet ms", verdana, arial;
+  }</style><g transform="translate(0, 8)"><g class="output"><g class="clusters"><g class="cluster" id="Post-install" transform="translate(277.3671875,2319)" style="opacity: 1;"><rect width="538.734375" height="356" x="-269.3671875" y="-178"></rect><g class="label" transform="translate(0, -164)" id="mermaid-1578205608593Text"><g transform="translate(-39.7109375,-9.5)"><foreignObject width="79.421875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Post-install</div></foreignObject></g></g></g><g class="cluster" id="subGraph2" transform="translate(307.244140625,1805)" style="opacity: 1;"><rect width="509.00390625" height="572" x="-254.501953125" y="-286"></rect><g class="label" transform="translate(0, -272)" id="mermaid-1578205608593Text"><g transform="translate(-73.5546875,-9.5)"><foreignObject width="147.109375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Part 2 of installation</div></foreignObject></g></g></g><g class="cluster" id="subGraph1" transform="translate(559.5625,1138.5)" style="opacity: 1;"><rect width="894.1328125" height="661" x="-447.06640625" y="-330.5"></rect><g class="label" transform="translate(0, -316.5)" id="mermaid-1578205608593Text"><g transform="translate(-73.5546875,-9.5)"><foreignObject width="147.109375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Part 1 of installation</div></foreignObject></g></g></g><g class="cluster" id="subGraph0" transform="translate(650.876953125,383)" style="opacity: 1;"><rect width="990.96484375" height="572" x="-495.482421875" y="-286"></rect><g class="label" transform="translate(0, -272)" id="mermaid-1578205608593Text"><g transform="translate(-112.78125,-9.5)"><foreignObject width="225.5625" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Prepare macOS Installation USB</div></foreignObject></g></g></g></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M609.265625,47L609.265625,72L609.265625,97L609.265625,122" marker-end="url(#arrowhead539)" style="fill:none"></path><defs><marker id="arrowhead539" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M609.265625,161L609.265625,186L609.765625,211.5" marker-end="url(#arrowhead540)" style="fill:none"></path><defs><marker id="arrowhead540" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M672.0474175347222,250.5L781.73828125,284.5L781.73828125,319" marker-end="url(#arrowhead541)" style="fill:none"></path><defs><marker id="arrowhead541" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M514.6692708333334,250.5L345.921875,284.5L345.921875,338.5L345.921875,392.5L345.921875,446.5L345.921875,491L345.921875,516" marker-end="url(#arrowhead542)" style="fill:none"></path><defs><marker id="arrowhead542" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M345.921875,555L345.921875,580L345.921875,605" marker-end="url(#arrowhead543)" style="fill:none"></path><defs><marker id="arrowhead543" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M719.7033420138889,358L609.94921875,392.5L609.94921875,427" marker-end="url(#arrowhead544)" style="fill:none"></path><defs><marker id="arrowhead544" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M843.7732204861111,358L953.52734375,392.5L953.52734375,427" marker-end="url(#arrowhead545)" style="fill:none"></path><defs><marker id="arrowhead545" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M609.94921875,466L609.94921875,491L706.4599280196629,516" marker-end="url(#arrowhead546)" style="fill:none"></path><defs><marker id="arrowhead546" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M953.52734375,466L953.52734375,491L857.0166344803371,516" marker-end="url(#arrowhead547)" style="fill:none"></path><defs><marker id="arrowhead547" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M781.73828125,555L781.73828125,580L781.73828125,605" marker-end="url(#arrowhead548)" style="fill:none"></path><defs><marker id="arrowhead548" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M345.921875,644L345.921875,669L345.921875,694L493.8678019662921,719" marker-end="url(#arrowhead549)" style="fill:none"></path><defs><marker id="arrowhead549" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M781.73828125,644L781.73828125,669L781.73828125,694L684.8435305477528,719" marker-end="url(#arrowhead550)" style="fill:none"></path><defs><marker id="arrowhead550" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M609.265625,758L609.265625,783L609.265625,808L609.265625,833" marker-end="url(#arrowhead551)" style="fill:none"></path><defs><marker id="arrowhead551" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M609.265625,872L609.265625,897L609.265625,922" marker-end="url(#arrowhead552)" style="fill:none"></path><defs><marker id="arrowhead552" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M609.265625,961L609.265625,986L609.765625,1011.5" marker-end="url(#arrowhead553)" style="fill:none"></path><defs><marker id="arrowhead553" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M525.5504658670231,1047.7103067340463L337.12109375,1084.5L337.12109375,1119" marker-end="url(#arrowhead554)" style="fill:none"></path><defs><marker id="arrowhead554" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M337.12109375,1158L337.12109375,1183L337.12109375,1208" marker-end="url(#arrowhead555)" style="fill:none"></path><defs><marker id="arrowhead555" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M337.12109375,1247L337.12109375,1272L337.62109375,1297.5" marker-end="url(#arrowhead556)" style="fill:none"></path><defs><marker id="arrowhead556" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M693.9807841329769,1047.7103067340463L881.41015625,1084.5L881.41015625,1138.5L881.41015625,1183L881.41015625,1227.5L881.41015625,1272L881.41015625,1316.5L881.41015625,1370.5L881.41015625,1424.5L881.41015625,1469L881.41015625,1494L881.41015625,1519L881.41015625,1563.5L881.41015625,1608L881.41015625,1652.5L881.41015625,1706.5L881.41015625,1760.5L881.41015625,1805L881.41015625,1849.5L881.41015625,1894L881.41015625,1938.5L881.41015625,1992.5L881.41015625,2027" marker-end="url(#arrowhead557)" style="fill:none"></path><defs><marker id="arrowhead557" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M518.7227350984549,1334.0467173030902L910.80859375,1370.5L910.80859375,1424.5L910.80859375,1469L910.80859375,1494L910.80859375,1519L910.80859375,1563.5L910.80859375,1608L910.80859375,1652.5L910.80859375,1706.5L910.80859375,1760.5L910.80859375,1805L910.80859375,1849.5L910.80859375,1894L910.80859375,1938.5L910.80859375,1992.5L892.0262586805555,2027" marker-end="url(#arrowhead558)" style="fill:none"></path><defs><marker id="arrowhead558" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M337.62109375,1336.5L337.12109375,1370.5L337.12109375,1405" marker-end="url(#arrowhead559)" style="fill:none"></path><defs><marker id="arrowhead559" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M337.12109375,1444L337.12109375,1469L337.12109375,1494L337.12109375,1519L337.12109375,1544" marker-end="url(#arrowhead560)" style="fill:none"></path><defs><marker id="arrowhead560" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M337.12109375,1583L337.12109375,1608L337.62109375,1633.5" marker-end="url(#arrowhead561)" style="fill:none"></path><defs><marker id="arrowhead561" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M316.0432942708333,1672.5L277.3671875,1706.5L277.3671875,1741" marker-end="url(#arrowhead562)" style="fill:none"></path><defs><marker id="arrowhead562" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M277.3671875,1780L277.3671875,1805L277.3671875,1830" marker-end="url(#arrowhead563)" style="fill:none"></path><defs><marker id="arrowhead563" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M277.3671875,1869L277.3671875,1894L277.8671875,1919.5" marker-end="url(#arrowhead564)" style="fill:none"></path><defs><marker id="arrowhead564" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M277.8671875,1958.5L277.3671875,1992.5L277.3671875,2027" marker-end="url(#arrowhead565)" style="fill:none"></path><defs><marker id="arrowhead565" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M277.3671875,2066L277.3671875,2091L277.3671875,2116L277.3671875,2141L277.3671875,2166" marker-end="url(#arrowhead566)" style="fill:none"></path><defs><marker id="arrowhead566" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M277.3671875,2205L277.3671875,2230L277.3671875,2255" marker-end="url(#arrowhead567)" style="fill:none"></path><defs><marker id="arrowhead567" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M277.3671875,2294L277.3671875,2319L277.3671875,2344" marker-end="url(#arrowhead568)" style="fill:none"></path><defs><marker id="arrowhead568" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M277.3671875,2383L277.3671875,2408L277.3671875,2433" marker-end="url(#arrowhead569)" style="fill:none"></path><defs><marker id="arrowhead569" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M277.3671875,2472L277.3671875,2497L277.3671875,2522L277.3671875,2547" marker-end="url(#arrowhead570)" style="fill:none"></path><defs><marker id="arrowhead570" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M332.05360243055554,1958.5L427.421875,1992.5L717.4699435763889,2027" marker-end="url(#arrowhead571)" style="fill:none"></path><defs><marker id="arrowhead571" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M386.5417751736111,1672.5L472.59375,1706.5L472.59375,1760.5L472.59375,1805L472.59375,1849.5L472.59375,1894L472.59375,1938.5L472.59375,1992.5L733.7820095486111,2027" marker-end="url(#arrowhead572)" style="fill:none"></path><defs><marker id="arrowhead572" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(781.73828125,284.5)" style="opacity: 1;"><g transform="translate(-11.328125,-9.5)" class="label"><foreignObject width="22.65625" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Yes</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(345.921875,392.5)" style="opacity: 1;"><g transform="translate(-9.3984375,-9.5)" class="label"><foreignObject width="18.796875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">No</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(337.12109375,1084.5)" style="opacity: 1;"><g transform="translate(-11.328125,-9.5)" class="label"><foreignObject width="22.65625" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Yes</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(881.41015625,1563.5)" style="opacity: 1;"><g transform="translate(-9.3984375,-9.5)" class="label"><foreignObject width="18.796875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">No</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(910.80859375,1706.5)" style="opacity: 1;"><g transform="translate(-9.3984375,-9.5)" class="label"><foreignObject width="18.796875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">No</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(337.12109375,1370.5)" style="opacity: 1;"><g transform="translate(-11.328125,-9.5)" class="label"><foreignObject width="22.65625" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Yes</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(277.3671875,1706.5)" style="opacity: 1;"><g transform="translate(-11.328125,-9.5)" class="label"><foreignObject width="22.65625" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Yes</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(277.3671875,1992.5)" style="opacity: 1;"><g transform="translate(-11.328125,-9.5)" class="label"><foreignObject width="22.65625" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">Yes</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(427.421875,1992.5)" style="opacity: 1;"><g transform="translate(-9.3984375,-9.5)" class="label"><foreignObject width="18.796875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">No</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(472.59375,1849.5)" style="opacity: 1;"><g transform="translate(-9.3984375,-9.5)" class="label"><foreignObject width="18.796875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">No</span></div></foreignObject></g></g></g><g class="nodes"><g class="node" id="setupMac" transform="translate(277.3671875,2185.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-198.078125" y="-19.5" width="396.15625" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-188.078125,-9.5)"><foreignObject width="376.15625" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Setup your macOS on ThinkPad using Setup Assistant</div></foreignObject></g></g></g><g class="node" id="installKext" transform="translate(277.3671875,2274.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-134.5" y="-19.5" width="269" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-124.5,-9.5)"><foreignObject width="249" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Install necessary Kernel Extensions</div></foreignObject></g></g></g><g class="node" id="disableHibernate" transform="translate(277.3671875,2363.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-79.4921875" y="-19.5" width="158.984375" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-69.4921875,-9.5)"><foreignObject width="138.984375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Disable hibernation</div></foreignObject></g></g></g><g class="node" id="fineTune" transform="translate(277.3671875,2452.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-234.3671875" y="-19.5" width="468.734375" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-224.3671875,-9.5)"><foreignObject width="448.734375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Fine tune your Hackintosh with the textual resources provided</div></foreignObject></g></g></g><g class="node" id="startInstall2" transform="translate(337.12109375,1563.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-122.6875" y="-19.5" width="245.375" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-112.6875,-9.5)"><foreignObject width="225.375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Begin macOS installation part 2</div></foreignObject></g></g></g><g class="node" id="install2result?" transform="translate(337.12109375,1652.5)" style="opacity: 1;"><polygon points="9.75,0 369.5,0 379.25,-19.5 369.5,-39 9.75,-39 0,-19.5" transform="translate(-189.625,19.5)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-169.875,-9.5)"><foreignObject width="339.75" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Part 2 of install macOS completed successfully?</div></foreignObject></g></g></g><g class="node" id="reboot2" transform="translate(277.3671875,1760.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-87.8984375" y="-19.5" width="175.796875" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-77.8984375,-9.5)"><foreignObject width="155.796875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Reboot your ThinkPad</div></foreignObject></g></g></g><g class="node" id="bootmac" transform="translate(277.3671875,1849.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-105.3671875" y="-19.5" width="210.734375" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-95.3671875,-9.5)"><foreignObject width="190.734375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Boot from installed macOS</div></foreignObject></g></g></g><g class="node" id="boot2success?" transform="translate(277.3671875,1938.5)" style="opacity: 1;"><polygon points="9.75,0 261.09375,0 270.84375,-19.5 261.09375,-39 9.75,-39 0,-19.5" transform="translate(-135.421875,19.5)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-115.671875,-9.5)"><foreignObject width="231.34375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Did macOS boot up successfully?</div></foreignObject></g></g></g><g class="node" id="installSuccess" transform="translate(277.3671875,2046.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-123.15625" y="-19.5" width="246.3125" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-113.15625,-9.5)"><foreignObject width="226.3125" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">macOS installation is successful</div></foreignObject></g></g></g><g class="node" id="changeBootOrder" transform="translate(609.265625,852.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-153.4453125" y="-19.5" width="306.890625" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-143.4453125,-9.5)"><foreignObject width="286.890625" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Change the boot order of your ThinkPad</div></foreignObject></g></g></g><g class="node" id="bootInstaller" transform="translate(609.265625,941.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-166.0390625" y="-19.5" width="332.078125" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-156.0390625,-9.5)"><foreignObject width="312.078125" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Boot the macOS installer using Clover Menu</div></foreignObject></g></g></g><g class="node" id="bootSuccess?" transform="translate(609.265625,1030.5)" style="opacity: 1;"><polygon points="9.75,0 175.390625,0 185.140625,-19.5 175.390625,-39 9.75,-39 0,-19.5" transform="translate(-92.5703125,19.5)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-72.8203125,-9.5)"><foreignObject width="145.640625" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Booted successfully?</div></foreignObject></g></g></g><g class="node" id="partition" transform="translate(337.12109375,1138.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-78.7578125" y="-19.5" width="157.515625" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-68.7578125,-9.5)"><foreignObject width="137.515625" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Partition your disks</div></foreignObject></g></g></g><g class="node" id="startInstall" transform="translate(337.12109375,1227.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-98.7265625" y="-19.5" width="197.453125" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-88.7265625,-9.5)"><foreignObject width="177.453125" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Begin macOS installation</div></foreignObject></g></g></g><g class="node" id="installresult?" transform="translate(337.12109375,1316.5)" style="opacity: 1;"><polygon points="9.75,0 369.5,0 379.25,-19.5 369.5,-39 9.75,-39 0,-19.5" transform="translate(-189.625,19.5)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-169.875,-9.5)"><foreignObject width="339.75" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Part 1 of install macOS completed successfully?</div></foreignObject></g></g></g><g class="node" id="reboot" transform="translate(337.12109375,1424.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-87.8984375" y="-19.5" width="175.796875" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-77.8984375,-9.5)"><foreignObject width="155.796875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Reboot your ThinkPad</div></foreignObject></g></g></g><g class="node" id="hvmac?" transform="translate(609.265625,230.5)" style="opacity: 1;"><polygon points="9.75,0 330.640625,0 340.390625,-19.5 330.640625,-39 9.75,-39 0,-19.5" transform="translate(-170.1953125,19.5)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-150.4453125,-9.5)"><foreignObject width="300.890625" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Do you have an usable Mac or Hackintosh?</div></foreignObject></g></g></g><g class="node" id="getUSB" transform="translate(609.265625,141.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-150.953125" y="-19.5" width="301.90625" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-140.953125,-9.5)"><foreignObject width="281.90625" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Get an USB with at least 16GB capacity</div></foreignObject></g></g></g><g class="node" id="getInstaller" transform="translate(781.73828125,338.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-140.6328125" y="-19.5" width="281.265625" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-130.6328125,-9.5)"><foreignObject width="261.265625" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Download macOS Installer on macOS</div></foreignObject></g></g></g><g class="node" id="getInstallerLinux" transform="translate(345.921875,535.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-140.859375" y="-19.5" width="281.71875" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-130.859375,-9.5)"><foreignObject width="261.71875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Create macOS installer USB on Linux</div></foreignObject></g></g></g><g class="node" id="dosdude" transform="translate(609.94921875,446.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-148.109375" y="-19.5" width="296.21875" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-138.109375,-9.5)"><foreignObject width="276.21875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Download macOS using macOS Patcher</div></foreignObject></g></g></g><g class="node" id="mas" transform="translate(953.52734375,446.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-145.46875" y="-19.5" width="290.9375" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-135.46875,-9.5)"><foreignObject width="270.9375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Download macOS using Mac App Store</div></foreignObject></g></g></g><g class="node" id="thankyou" transform="translate(345.921875,624.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-118.484375" y="-19.5" width="236.96875" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-108.484375,-9.5)"><foreignObject width="216.96875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Use the script from notthebee</div></foreignObject></g></g></g><g class="node" id="createUSBmacOS" transform="translate(781.73828125,535.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-154.0859375" y="-19.5" width="308.171875" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-144.0859375,-9.5)"><foreignObject width="288.171875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Use Unibeast to create the USB installer</div></foreignObject></g></g></g><g class="node" id="installClover" transform="translate(781.73828125,624.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-73.34375" y="-19.5" width="146.6875" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-63.34375,-9.5)"><foreignObject width="126.6875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Install bootloader</div></foreignObject></g></g></g><g class="node" id="begin" transform="translate(609.265625,27.5)" style="opacity: 1;"><rect rx="5" ry="5" x="-177.3046875" y="-19.5" width="354.609375" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-167.3046875,-9.5)"><foreignObject width="334.609375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Begin Hackintosh Journey with ThinkPad X1 C6</div></foreignObject></g></g></g><g class="node" id="sorry" transform="translate(881.41015625,2046.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-284.6640625" y="-19.5" width="569.328125" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-274.6640625,-9.5)"><foreignObject width="549.328125" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Installation failed, please report the problem so that I can help and improve</div></foreignObject></g></g></g><g class="node" id="finish" transform="translate(609.265625,738.5)" style="opacity: 1;"><rect rx="5" ry="5" x="-126.21875" y="-19.5" width="252.4375" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-116.21875,-9.5)"><foreignObject width="232.4375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">You have the USB installer ready</div></foreignObject></g></g></g><g class="node" id="complete" transform="translate(277.3671875,2566.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-206.2890625" y="-19.5" width="412.578125" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-196.2890625,-9.5)"><foreignObject width="392.578125" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Installation complete and fine-tuned! Congratulations!</div></foreignObject></g></g></g></g></g></g></svg>
