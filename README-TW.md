@@ -188,7 +188,7 @@
 
 #### 流程圖
 
-![flowchart](./README.assets/flowchart.svg)
+![flowchart-tw](./README.assets/flowchart-tw.svg)
 
 
 #### STEP 1: Create Installation Media

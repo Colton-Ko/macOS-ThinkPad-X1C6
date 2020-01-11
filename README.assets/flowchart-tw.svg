@@ -1,0 +1,505 @@
+<svg id="mermaid-1578737436677" width="1219.48828125" xmlns="http://www.w3.org/2000/svg" height="2602" viewBox="0 0 1219.48828125 2602"><style>
+
+
+
+#mermaid-1578737436677 .label {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  color: #333; }
+
+#mermaid-1578737436677 .label text {
+  fill: #333; }
+
+#mermaid-1578737436677 .node rect,
+#mermaid-1578737436677 .node circle,
+#mermaid-1578737436677 .node ellipse,
+#mermaid-1578737436677 .node polygon,
+#mermaid-1578737436677 .node path {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1px; }
+
+#mermaid-1578737436677 .node .label {
+  text-align: center; }
+
+#mermaid-1578737436677 .node.clickable {
+  cursor: pointer; }
+
+#mermaid-1578737436677 .arrowheadPath {
+  fill: #333333; }
+
+#mermaid-1578737436677 .edgePath .path {
+  stroke: #333333;
+  stroke-width: 1.5px; }
+
+#mermaid-1578737436677 .edgeLabel {
+  background-color: #e8e8e8;
+  text-align: center; }
+
+#mermaid-1578737436677 .cluster rect {
+  fill: #ffffde;
+  stroke: #aaaa33;
+  stroke-width: 1px; }
+
+#mermaid-1578737436677 .cluster text {
+  fill: #333; }
+
+#mermaid-1578737436677 div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 200px;
+  padding: 2px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 12px;
+  background: #ffffde;
+  border: 1px solid #aaaa33;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 100; }
+
+#mermaid-1578737436677 .actor {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1578737436677 text.actor {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1578737436677 .actor-line {
+  stroke: grey; }
+
+#mermaid-1578737436677 .messageLine0 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1578737436677 .messageLine1 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#mermaid-1578737436677 #arrowhead {
+  fill: #333; }
+
+#mermaid-1578737436677 .sequenceNumber {
+  fill: white; }
+
+#mermaid-1578737436677 #sequencenumber {
+  fill: #333; }
+
+#mermaid-1578737436677 #crosshead path {
+  fill: #333 !important;
+  stroke: #333 !important; }
+
+#mermaid-1578737436677 .messageText {
+  fill: #333;
+  stroke: none; }
+
+#mermaid-1578737436677 .labelBox {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#mermaid-1578737436677 .labelText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1578737436677 .loopText {
+  fill: black;
+  stroke: none; }
+
+#mermaid-1578737436677 .loopLine {
+  stroke-width: 2;
+  stroke-dasharray: '2 2';
+  stroke: #CCCCFF; }
+
+#mermaid-1578737436677 .note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+
+#mermaid-1578737436677 .noteText {
+  fill: black;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 14px; }
+
+#mermaid-1578737436677 .activation0 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1578737436677 .activation1 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#mermaid-1578737436677 .activation2 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+
+#mermaid-1578737436677 .mermaid-main-font {
+  font-family: "trebuchet ms", verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1578737436677 .section {
+  stroke: none;
+  opacity: 0.2; }
+
+#mermaid-1578737436677 .section0 {
+  fill: rgba(102, 102, 255, 0.49); }
+
+#mermaid-1578737436677 .section2 {
+  fill: #fff400; }
+
+#mermaid-1578737436677 .section1,
+#mermaid-1578737436677 .section3 {
+  fill: white;
+  opacity: 0.2; }
+
+#mermaid-1578737436677 .sectionTitle0 {
+  fill: #333; }
+
+#mermaid-1578737436677 .sectionTitle1 {
+  fill: #333; }
+
+#mermaid-1578737436677 .sectionTitle2 {
+  fill: #333; }
+
+#mermaid-1578737436677 .sectionTitle3 {
+  fill: #333; }
+
+#mermaid-1578737436677 .sectionTitle {
+  text-anchor: start;
+  font-size: 11px;
+  text-height: 14px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+
+#mermaid-1578737436677 .grid .tick {
+  stroke: lightgrey;
+  opacity: 0.8;
+  shape-rendering: crispEdges; }
+#mermaid-1578737436677   .grid .tick text {
+    font-family: 'trebuchet ms', verdana, arial;
+    font-family: var(--mermaid-font-family); }
+
+#mermaid-1578737436677 .grid path {
+  stroke-width: 0; }
+
+
+#mermaid-1578737436677 .today {
+  fill: none;
+  stroke: red;
+  stroke-width: 2px; }
+
+
+
+#mermaid-1578737436677 .task {
+  stroke-width: 2; }
+
+#mermaid-1578737436677 .taskText {
+  text-anchor: middle;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1578737436677 .taskText:not([font-size]) {
+  font-size: 11px; }
+
+#mermaid-1578737436677 .taskTextOutsideRight {
+  fill: black;
+  text-anchor: start;
+  font-size: 11px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1578737436677 .taskTextOutsideLeft {
+  fill: black;
+  text-anchor: end;
+  font-size: 11px; }
+
+
+#mermaid-1578737436677 .task.clickable {
+  cursor: pointer; }
+
+#mermaid-1578737436677 .taskText.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1578737436677 .taskTextOutsideLeft.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+#mermaid-1578737436677 .taskTextOutsideRight.clickable {
+  cursor: pointer;
+  fill: #003163 !important;
+  font-weight: bold; }
+
+
+#mermaid-1578737436677 .taskText0,
+#mermaid-1578737436677 .taskText1,
+#mermaid-1578737436677 .taskText2,
+#mermaid-1578737436677 .taskText3 {
+  fill: white; }
+
+#mermaid-1578737436677 .task0,
+#mermaid-1578737436677 .task1,
+#mermaid-1578737436677 .task2,
+#mermaid-1578737436677 .task3 {
+  fill: #8a90dd;
+  stroke: #534fbc; }
+
+#mermaid-1578737436677 .taskTextOutside0,
+#mermaid-1578737436677 .taskTextOutside2 {
+  fill: black; }
+
+#mermaid-1578737436677 .taskTextOutside1,
+#mermaid-1578737436677 .taskTextOutside3 {
+  fill: black; }
+
+
+#mermaid-1578737436677 .active0,
+#mermaid-1578737436677 .active1,
+#mermaid-1578737436677 .active2,
+#mermaid-1578737436677 .active3 {
+  fill: #bfc7ff;
+  stroke: #534fbc; }
+
+#mermaid-1578737436677 .activeText0,
+#mermaid-1578737436677 .activeText1,
+#mermaid-1578737436677 .activeText2,
+#mermaid-1578737436677 .activeText3 {
+  fill: black !important; }
+
+
+#mermaid-1578737436677 .done0,
+#mermaid-1578737436677 .done1,
+#mermaid-1578737436677 .done2,
+#mermaid-1578737436677 .done3 {
+  stroke: grey;
+  fill: lightgrey;
+  stroke-width: 2; }
+
+#mermaid-1578737436677 .doneText0,
+#mermaid-1578737436677 .doneText1,
+#mermaid-1578737436677 .doneText2,
+#mermaid-1578737436677 .doneText3 {
+  fill: black !important; }
+
+
+#mermaid-1578737436677 .crit0,
+#mermaid-1578737436677 .crit1,
+#mermaid-1578737436677 .crit2,
+#mermaid-1578737436677 .crit3 {
+  stroke: #ff8888;
+  fill: red;
+  stroke-width: 2; }
+
+#mermaid-1578737436677 .activeCrit0,
+#mermaid-1578737436677 .activeCrit1,
+#mermaid-1578737436677 .activeCrit2,
+#mermaid-1578737436677 .activeCrit3 {
+  stroke: #ff8888;
+  fill: #bfc7ff;
+  stroke-width: 2; }
+
+#mermaid-1578737436677 .doneCrit0,
+#mermaid-1578737436677 .doneCrit1,
+#mermaid-1578737436677 .doneCrit2,
+#mermaid-1578737436677 .doneCrit3 {
+  stroke: #ff8888;
+  fill: lightgrey;
+  stroke-width: 2;
+  cursor: pointer;
+  shape-rendering: crispEdges; }
+
+#mermaid-1578737436677 .milestone {
+  transform: rotate(45deg) scale(0.8, 0.8); }
+
+#mermaid-1578737436677 .milestoneText {
+  font-style: italic; }
+
+#mermaid-1578737436677 .doneCritText0,
+#mermaid-1578737436677 .doneCritText1,
+#mermaid-1578737436677 .doneCritText2,
+#mermaid-1578737436677 .doneCritText3 {
+  fill: black !important; }
+
+#mermaid-1578737436677 .activeCritText0,
+#mermaid-1578737436677 .activeCritText1,
+#mermaid-1578737436677 .activeCritText2,
+#mermaid-1578737436677 .activeCritText3 {
+  fill: black !important; }
+
+#mermaid-1578737436677 .titleText {
+  text-anchor: middle;
+  font-size: 18px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1578737436677 g.classGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family);
+  font-size: 10px; }
+#mermaid-1578737436677   g.classGroup text .title {
+    font-weight: bolder; }
+
+#mermaid-1578737436677 g.clickable {
+  cursor: pointer; }
+
+#mermaid-1578737436677 g.classGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1578737436677 g.classGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578737436677 .classLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1578737436677 .classLabel .label {
+  fill: #9370DB;
+  font-size: 10px; }
+
+#mermaid-1578737436677 .relation {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1578737436677 .dashed-line {
+  stroke-dasharray: 3; }
+
+#mermaid-1578737436677 #compositionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578737436677 #compositionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578737436677 #aggregationStart {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578737436677 #aggregationEnd {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578737436677 #dependencyStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578737436677 #dependencyEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578737436677 #extensionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578737436677 #extensionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578737436677 .commit-id,
+#mermaid-1578737436677 .commit-msg,
+#mermaid-1578737436677 .branch-label {
+  fill: lightgrey;
+  color: lightgrey;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1578737436677 .pieTitleText {
+  text-anchor: middle;
+  font-size: 25px;
+  fill: black;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1578737436677 .slice {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1578737436677 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+#mermaid-1578737436677 g.stateGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-size: 10px; }
+
+#mermaid-1578737436677 g.stateGroup .state-title {
+  font-weight: bolder;
+  fill: black; }
+
+#mermaid-1578737436677 g.stateGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#mermaid-1578737436677 g.stateGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#mermaid-1578737436677 .transition {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#mermaid-1578737436677 .stateGroup .composit {
+  fill: white;
+  border-bottom: 1px; }
+
+#mermaid-1578737436677 .stateGroup .alt-composit {
+  fill: #e0e0e0;
+  border-bottom: 1px; }
+
+#mermaid-1578737436677 .state-note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+#mermaid-1578737436677   .state-note text {
+    fill: black;
+    stroke: none;
+    font-size: 10px; }
+
+#mermaid-1578737436677 .stateLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#mermaid-1578737436677 .stateLabel text {
+  fill: black;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-family: var(--mermaid-font-family); }
+
+:root {
+  --mermaid-font-family: '"trebuchet ms", verdana, arial';
+  --mermaid-font-family: "Comic Sans MS", "Comic Sans", cursive; }
+
+:root { --mermaid-font-family: "trebuchet ms", verdana, arial;}</style><style>#mermaid-1578737436677 {
+    color: rgb(0, 0, 0);
+    font: normal normal normal normal 16px/19px "trebuchet ms", verdana, arial;
+  }</style><g transform="translate(0, 8)"><g class="output"><g class="clusters"><g class="cluster" id="subGraph3" transform="translate(282.375,2319)" style="opacity: 1;"><rect width="473.359375" height="356" x="-236.6796875" y="-178"></rect><g class="label" transform="translate(0, -164)" id="mermaid-1578737436677Text"><g transform="translate(-48.25,-9.5)"><foreignObject width="96.5" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">設定您的 Mac</div></foreignObject></g></g></g><g class="cluster" id="subGraph2" transform="translate(308.494140625,1805)" style="opacity: 1;"><rect width="600.98828125" height="572" x="-300.494140625" y="-286"></rect><g class="label" transform="translate(0, -272)" id="mermaid-1578737436677Text"><g transform="translate(-100.8671875,-9.5)"><foreignObject width="201.734375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">第二部分的 macOS 安裝作業</div></foreignObject></g></g></g><g class="cluster" id="subGraph1" transform="translate(594.26171875,1138.5)" style="opacity: 1;"><rect width="992.3203125" height="661" x="-496.16015625" y="-330.5"></rect><g class="label" transform="translate(0, -316.5)" id="mermaid-1578737436677Text"><g transform="translate(-100.8671875,-9.5)"><foreignObject width="201.734375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">第一部分的 macOS 安裝作業</div></foreignObject></g></g></g><g class="cluster" id="subGraph0" transform="translate(662.138671875,383)" style="opacity: 1;"><rect width="1057.90234375" height="572" x="-528.951171875" y="-286"></rect><g class="label" transform="translate(0, -272)" id="mermaid-1578737436677Text"><g transform="translate(-87.2734375,-9.5)"><foreignObject width="174.546875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">準備 macOS 安裝 隨身碟</div></foreignObject></g></g></g></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M609.77734375,47L609.77734375,72L609.77734375,97L609.77734375,122" marker-end="url(#arrowhead485)" style="fill:none"></path><defs><marker id="arrowhead485" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M609.77734375,161L609.77734375,186L610.27734375,211.5" marker-end="url(#arrowhead486)" style="fill:none"></path><defs><marker id="arrowhead486" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M666.4047309027778,250.5L765.20703125,284.5L765.20703125,319" marker-end="url(#arrowhead487)" style="fill:none"></path><defs><marker id="arrowhead487" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M508.8256553017181,248.92474810343612L304.14453125,284.5L304.14453125,338.5L304.14453125,392.5L304.14453125,446.5L304.14453125,491L304.14453125,516" marker-end="url(#arrowhead488)" style="fill:none"></path><defs><marker id="arrowhead488" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M304.14453125,555L304.14453125,580L304.14453125,605" marker-end="url(#arrowhead489)" style="fill:none"></path><defs><marker id="arrowhead489" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M691.7463107638889,358L561.77734375,392.5L561.77734375,427" marker-end="url(#arrowhead490)" style="fill:none"></path><defs><marker id="arrowhead490" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M838.6677517361111,358L968.63671875,392.5L968.63671875,427" marker-end="url(#arrowhead491)" style="fill:none"></path><defs><marker id="arrowhead491" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M561.77734375,466L561.77734375,491L676.0636850421348,516" marker-end="url(#arrowhead492)" style="fill:none"></path><defs><marker id="arrowhead492" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M968.63671875,466L968.63671875,491L854.3503774578652,516" marker-end="url(#arrowhead493)" style="fill:none"></path><defs><marker id="arrowhead493" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M765.20703125,555L765.20703125,580L765.20703125,605" marker-end="url(#arrowhead494)" style="fill:none"></path><defs><marker id="arrowhead494" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M304.14453125,644L304.14453125,669L304.14453125,694L482.91015625,720.0281945758032" marker-end="url(#arrowhead495)" style="fill:none"></path><defs><marker id="arrowhead495" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M765.20703125,644L765.20703125,669L765.20703125,694L677.8869820926966,719" marker-end="url(#arrowhead496)" style="fill:none"></path><defs><marker id="arrowhead496" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M609.77734375,758L609.77734375,783L609.77734375,808L609.77734375,833" marker-end="url(#arrowhead497)" style="fill:none"></path><defs><marker id="arrowhead497" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M609.77734375,872L609.77734375,897L609.77734375,922" marker-end="url(#arrowhead498)" style="fill:none"></path><defs><marker id="arrowhead498" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M609.77734375,961L609.77734375,986L610.27734375,1011.5" marker-end="url(#arrowhead499)" style="fill:none"></path><defs><marker id="arrowhead499" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M541.5754679170817,1045.0962483341634L346.59375,1084.5L346.59375,1119" marker-end="url(#arrowhead500)" style="fill:none"></path><defs><marker id="arrowhead500" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M346.59375,1158L346.59375,1183L346.59375,1208" marker-end="url(#arrowhead501)" style="fill:none"></path><defs><marker id="arrowhead501" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M346.59375,1247L346.59375,1272L347.09375,1297.5" marker-end="url(#arrowhead502)" style="fill:none"></path><defs><marker id="arrowhead502" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M680.0288560200089,1042.9969754599822L923.73828125,1084.5L923.73828125,1138.5L923.73828125,1183L923.73828125,1227.5L923.73828125,1272L923.73828125,1316.5L923.73828125,1370.5L923.73828125,1424.5L923.73828125,1469L923.73828125,1494L923.73828125,1519L923.73828125,1563.5L923.73828125,1608L923.73828125,1652.5L923.73828125,1706.5L923.73828125,1760.5L923.73828125,1805L923.73828125,1849.5L923.73828125,1894L923.73828125,1938.5L923.73828125,1992.5L923.73828125,2027" marker-end="url(#arrowhead503)" style="fill:none"></path><defs><marker id="arrowhead503" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M516.1673081134253,1332.0872587731494L951.73828125,1370.5L951.73828125,1424.5L951.73828125,1469L951.73828125,1494L951.73828125,1519L951.73828125,1563.5L951.73828125,1608L951.73828125,1652.5L951.73828125,1706.5L951.73828125,1760.5L951.73828125,1805L951.73828125,1849.5L951.73828125,1894L951.73828125,1938.5L951.73828125,1992.5L933.8493923611111,2027" marker-end="url(#arrowhead504)" style="fill:none"></path><defs><marker id="arrowhead504" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M347.09375,1336.5L346.59375,1370.5L346.59375,1405" marker-end="url(#arrowhead505)" style="fill:none"></path><defs><marker id="arrowhead505" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M346.59375,1444L346.59375,1469L346.59375,1494L346.59375,1519L346.59375,1544" marker-end="url(#arrowhead506)" style="fill:none"></path><defs><marker id="arrowhead506" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M346.59375,1583L346.59375,1608L347.09375,1633.5" marker-end="url(#arrowhead507)" style="fill:none"></path><defs><marker id="arrowhead507" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M323.9036458333333,1672.5L282.375,1706.5L282.375,1741" marker-end="url(#arrowhead508)" style="fill:none"></path><defs><marker id="arrowhead508" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M282.375,1780L282.375,1805L282.375,1830" marker-end="url(#arrowhead509)" style="fill:none"></path><defs><marker id="arrowhead509" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M282.375,1869L282.375,1894L282.875,1919.5" marker-end="url(#arrowhead510)" style="fill:none"></path><defs><marker id="arrowhead510" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M282.875,1958.5L282.375,1992.5L282.375,2027" marker-end="url(#arrowhead511)" style="fill:none"></path><defs><marker id="arrowhead511" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M282.375,2066L282.375,2091L282.375,2116L282.375,2141L282.375,2166" marker-end="url(#arrowhead512)" style="fill:none"></path><defs><marker id="arrowhead512" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M282.375,2205L282.375,2230L282.375,2255" marker-end="url(#arrowhead513)" style="fill:none"></path><defs><marker id="arrowhead513" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M282.375,2294L282.375,2319L282.375,2344" marker-end="url(#arrowhead514)" style="fill:none"></path><defs><marker id="arrowhead514" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M282.375,2383L282.375,2408L282.375,2433" marker-end="url(#arrowhead515)" style="fill:none"></path><defs><marker id="arrowhead515" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M282.375,2472L282.375,2497L282.375,2522L282.375,2547" marker-end="url(#arrowhead516)" style="fill:none"></path><defs><marker id="arrowhead516" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M348.6705729166667,1958.5L464.578125,1992.5L757.9304470486111,2027" marker-end="url(#arrowhead517)" style="fill:none"></path><defs><marker id="arrowhead517" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M426.37738715277777,1672.5L566.1484375,1706.5L566.1484375,1760.5L566.1484375,1805L566.1484375,1849.5L566.1484375,1894L566.1484375,1938.5L566.1484375,1992.5L794.6086154513889,2027" marker-end="url(#arrowhead518)" style="fill:none"></path><defs><marker id="arrowhead518" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(765.20703125,284.5)" style="opacity: 1;"><g transform="translate(-8,-9.5)" class="label"><foreignObject width="16" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">是</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(304.14453125,392.5)" style="opacity: 1;"><g transform="translate(-8,-9.5)" class="label"><foreignObject width="16" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">否</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(346.59375,1084.5)" style="opacity: 1;"><g transform="translate(-8,-9.5)" class="label"><foreignObject width="16" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">是</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(923.73828125,1563.5)" style="opacity: 1;"><g transform="translate(-8,-9.5)" class="label"><foreignObject width="16" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">否</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(951.73828125,1706.5)" style="opacity: 1;"><g transform="translate(-8,-9.5)" class="label"><foreignObject width="16" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">否</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(346.59375,1370.5)" style="opacity: 1;"><g transform="translate(-8,-9.5)" class="label"><foreignObject width="16" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">是</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(282.375,1706.5)" style="opacity: 1;"><g transform="translate(-8,-9.5)" class="label"><foreignObject width="16" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">是</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(282.375,1992.5)" style="opacity: 1;"><g transform="translate(-8,-9.5)" class="label"><foreignObject width="16" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">是</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(464.578125,1992.5)" style="opacity: 1;"><g transform="translate(-9.3984375,-9.5)" class="label"><foreignObject width="18.796875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">No</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(566.1484375,1849.5)" style="opacity: 1;"><g transform="translate(-9.3984375,-9.5)" class="label"><foreignObject width="18.796875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel">No</span></div></foreignObject></g></g></g><g class="nodes"><g class="node" id="setupMac" transform="translate(282.375,2185.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-181.609375" y="-19.5" width="363.21875" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-171.609375,-9.5)"><foreignObject width="343.21875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">使用 設定助手 (Setup Assistant) 來設定您的 Mac</div></foreignObject></g></g></g><g class="node" id="installKext" transform="translate(282.375,2274.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-171.25" y="-19.5" width="342.5" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-161.25,-9.5)"><foreignObject width="322.5" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">安裝必備的核心延伸 (Kext, Kernel Extension)</div></foreignObject></g></g></g><g class="node" id="disableHibernate" transform="translate(282.375,2363.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-58" y="-19.5" width="116" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-48,-9.5)"><foreignObject width="96" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">禁用休眠功能</div></foreignObject></g></g></g><g class="node" id="fineTune" transform="translate(282.375,2452.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-201.6796875" y="-19.5" width="403.359375" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-191.6796875,-9.5)"><foreignObject width="383.359375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">參考本資源庫的 微調 部分，進一步調教您的 ThinkPad</div></foreignObject></g></g></g><g class="node" id="startInstall2" transform="translate(346.59375,1563.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-126.8671875" y="-19.5" width="253.734375" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-116.8671875,-9.5)"><foreignObject width="233.734375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">開始第二部分的 macOS 安裝作業</div></foreignObject></g></g></g><g class="node" id="install2result?" transform="translate(346.59375,1652.5)" style="opacity: 1;"><polygon points="9.75,0 343.484375,0 353.234375,-19.5 343.484375,-39 9.75,-39 0,-19.5" transform="translate(-176.6171875,19.5)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-156.8671875,-9.5)"><foreignObject width="313.734375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">是否成功完成第二部分的 macOS 安裝作業？</div></foreignObject></g></g></g><g class="node" id="reboot2" transform="translate(282.375,1760.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-92.859375" y="-19.5" width="185.71875" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-82.859375,-9.5)"><foreignObject width="165.71875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">重新啟動您的 ThinkPad</div></foreignObject></g></g></g><g class="node" id="bootmac" transform="translate(282.375,1849.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-239.375" y="-19.5" width="478.75" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-229.375,-9.5)"><foreignObject width="458.75" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">以 Clover 開機選單，選擇 macOS，以載入 新安裝的 macOS 系統</div></foreignObject></g></g></g><g class="node" id="boot2success?" transform="translate(282.375,1938.5)" style="opacity: 1;"><polygon points="9.75,0 300.296875,0 310.046875,-19.5 300.296875,-39 9.75,-39 0,-19.5" transform="translate(-155.0234375,19.5)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-135.2734375,-9.5)"><foreignObject width="270.546875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">是否成功載入 新安裝的 macOS 系統？</div></foreignObject></g></g></g><g class="node" id="installSuccess" transform="translate(282.375,2046.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-68.453125" y="-19.5" width="136.90625" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-58.453125,-9.5)"><foreignObject width="116.90625" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">macOS 安裝完成</div></foreignObject></g></g></g><g class="node" id="changeBootOrder" transform="translate(609.77734375,852.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-103.2734375" y="-19.5" width="206.546875" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-93.2734375,-9.5)"><foreignObject width="186.546875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">更改 ThinkPad 的開機順序</div></foreignObject></g></g></g><g class="node" id="bootInstaller" transform="translate(609.77734375,941.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-250.3671875" y="-19.5" width="500.734375" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-240.3671875,-9.5)"><foreignObject width="480.734375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">以 Clover 開機選單，選擇 macOS Installer，以載入macOS 安裝程式</div></foreignObject></g></g></g><g class="node" id="bootSuccess?" transform="translate(609.77734375,1030.5)" style="opacity: 1;"><polygon points="9.75,0 141.75,0 151.5,-19.5 141.75,-39 9.75,-39 0,-19.5" transform="translate(-75.75,19.5)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-56,-9.5)"><foreignObject width="112" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">開機是否成功？</div></foreignObject></g></g></g><g class="node" id="partition" transform="translate(346.59375,1138.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-74" y="-19.5" width="148" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-64,-9.5)"><foreignObject width="128" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">設定儲存裝置分區</div></foreignObject></g></g></g><g class="node" id="startInstall" transform="translate(346.59375,1227.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-68.453125" y="-19.5" width="136.90625" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-58.453125,-9.5)"><foreignObject width="116.90625" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">開始安裝 macOS</div></foreignObject></g></g></g><g class="node" id="installresult?" transform="translate(346.59375,1316.5)" style="opacity: 1;"><polygon points="9.75,0 343.484375,0 353.234375,-19.5 343.484375,-39 9.75,-39 0,-19.5" transform="translate(-176.6171875,19.5)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-156.8671875,-9.5)"><foreignObject width="313.734375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">是否成功完成第一部分的 macOS 安裝作業？</div></foreignObject></g></g></g><g class="node" id="reboot" transform="translate(346.59375,1424.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-92.859375" y="-19.5" width="185.71875" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-82.859375,-9.5)"><foreignObject width="165.71875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">重新啟動您的 ThinkPad</div></foreignObject></g></g></g><g class="node" id="hvmac?" transform="translate(609.77734375,230.5)" style="opacity: 1;"><polygon points="9.75,0 211.078125,0 220.828125,-19.5 211.078125,-39 9.75,-39 0,-19.5" transform="translate(-110.4140625,19.5)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-90.6640625,-9.5)"><foreignObject width="181.328125" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">你有可用的 Mac 電腦嗎？</div></foreignObject></g></g></g><g class="node" id="getUSB" transform="translate(609.77734375,141.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-137.1484375" y="-19.5" width="274.296875" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-127.1484375,-9.5)"><foreignObject width="254.296875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">準備一隻有最少 16GB 容量的隨身碟</div></foreignObject></g></g></g><g class="node" id="getInstaller" transform="translate(765.20703125,338.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-131.7265625" y="-19.5" width="263.453125" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-121.7265625,-9.5)"><foreignObject width="243.453125" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">在 macOS 上下載 macOS 安裝程式</div></foreignObject></g></g></g><g class="node" id="getInstallerLinux" transform="translate(304.14453125,535.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-134.765625" y="-19.5" width="269.53125" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-124.765625,-9.5)"><foreignObject width="249.53125" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">在 Linux 上建立 macOS 安裝隨身碟</div></foreignObject></g></g></g><g class="node" id="dosdude" transform="translate(561.77734375,446.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-169.40625" y="-19.5" width="338.8125" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-159.40625,-9.5)"><foreignObject width="318.8125" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">使用 macOS Patcher 來下載 macOS 安裝程式</div></foreignObject></g></g></g><g class="node" id="mas" transform="translate(968.63671875,446.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-187.453125" y="-19.5" width="374.90625" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-177.453125,-9.5)"><foreignObject width="354.90625" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">使用 using Mac App Store 來下載 macOS 安裝程式</div></foreignObject></g></g></g><g class="node" id="thankyou" transform="translate(304.14453125,624.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-115.75" y="-19.5" width="231.5" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-105.75,-9.5)"><foreignObject width="211.5" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">使用由 notthebee 編寫的腳本</div></foreignObject></g></g></g><g class="node" id="createUSBmacOS" transform="translate(765.20703125,535.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-126.09375" y="-19.5" width="252.1875" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-116.09375,-9.5)"><foreignObject width="232.1875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">使用 Unibeast 來建立安裝隨身碟</div></foreignObject></g></g></g><g class="node" id="installClover" transform="translate(765.20703125,624.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-68.4140625" y="-19.5" width="136.828125" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-58.4140625,-9.5)"><foreignObject width="116.828125" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">安裝 開機載入器</div></foreignObject></g></g></g><g class="node" id="begin" transform="translate(609.77734375,27.5)" style="opacity: 1;"><rect rx="5" ry="5" x="-94.8671875" y="-19.5" width="189.734375" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-84.8671875,-9.5)"><foreignObject width="169.734375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">開始安裝 macOS 的旅程</div></foreignObject></g></g></g><g class="node" id="sorry" transform="translate(923.73828125,2046.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-279.75" y="-19.5" width="559.5" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-269.75,-9.5)"><foreignObject width="539.5" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">安裝未成功，請在 GitHub 資源庫上報告問題以助排除問題及改善本資源庫。</div></foreignObject></g></g></g><g class="node" id="finish" transform="translate(609.77734375,738.5)" style="opacity: 1;"><rect rx="5" ry="5" x="-126.8671875" y="-19.5" width="253.734375" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-116.8671875,-9.5)"><foreignObject width="233.734375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">您已經準備好 macOS 安裝隨身碟</div></foreignObject></g></g></g><g class="node" id="complete" transform="translate(282.375,2566.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-82" y="-19.5" width="164" height="39" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-72,-9.5)"><foreignObject width="144" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">恭喜您！安裝成功！</div></foreignObject></g></g></g></g></g></g></svg>
