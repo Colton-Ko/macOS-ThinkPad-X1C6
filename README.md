@@ -375,7 +375,7 @@ iMessage Guide: [Link to Tonymacx86](https://www.tonymacx86.com/threads/an-idiot
 
 #### Thunderbolt Tweaks
 
-	- Principles and patching guide
+- Principles and patching guide
 		- Link here: [OSY Gitbook](https://osy.gitbook.io/hac-mini-guide/details/thunderbolt-3-fix)
 	- Thunderbolt 3 SSDT
 		- Link here: [Tonymacx86](https://www.tonymacx86.com/threads/in-progress-ssdt-for-thunderbolt-3-hotplug.248784/)
