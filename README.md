@@ -564,7 +564,8 @@ EFI stands for EFI/OC/Kexts and an entry in Config.plist/Kernel/Add
 - Mackie100 for Clover Configurator, Link: [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
 - notthebee for macOS USB Creator, Link: [macos_usb](https://github.com/notthebee/macos_usb)
 - corpnewt for USBMap script , Link: [corpnewt/USBMap](https://github.com/corpnewt/USBMap)
-- velaar for an updated ig-platform-id and continuous contributions , Link: [velaar's Github Repo](#https://github.com/velaar)
+- velaar for an updated ig-platform-id and continuous contributions , Link: [velaar's Github Repo](https://github.com/velaar)
+- Typora for editing this markdown document , Link: [Typora](https://www.typora.io)
 - All contributors in the hackintosh community
 
 [Back to Contents Page](#Contents)
