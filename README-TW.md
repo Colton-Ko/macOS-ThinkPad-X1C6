@@ -1,10 +1,12 @@
-# macOS-ThinkPad-X1C6 (OpenCore)
+# macOS-ThinkPad-X1C6
 
-###### 臺灣中文， [Click here for an English guide](./README.md)
+>  臺灣中文， [Click here for an English guide](./README.md)
 
 ### 最新通知
 
-本數據庫的組態設定支援 OpenCore 或 Clover 作為開機載入器，惟說明更新需時，說明更新完成後，將上載至本數據庫。
+本數據庫的組態設定支援 OpenCore 或 Clover 作為開機載入器，惟說明更新需時，說明更新完成後，將上載至本數據庫。本中文說明未必與英文版同步，請參考最後更新日期。
+
+最後更新：2020 年 1 月 5 日 (109-01-05)
 
 <br>
 
